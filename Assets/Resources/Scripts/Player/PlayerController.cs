@@ -8,6 +8,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController singleton {get; private set;}
 
     public SkeletonAnimation skeletonAnimation;
     public SkeletonData skeletonData;
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private string prevState;
     private string currentAnimation;
     private Rigidbody2D rb;
+
+    void Awake() { singleton = this; }
 
     void Start()
     {

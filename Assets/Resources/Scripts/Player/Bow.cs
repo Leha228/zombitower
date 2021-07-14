@@ -17,19 +17,17 @@ public class Bow : MonoBehaviour
     public float spaceBetweenPoint;
     private bool createPoints = false;
     private bool fireState = false;
-    private PlayerController playerController;
 
     void Start()
     {
         points = new GameObject[numberOfPoints];
-        playerController = player.GetComponent<PlayerController>();
         createPoints = true;
     }
 
     public void launchForceDown() {
         launchForce = 4;
         fireState = true;
-        playerController.aim();
+        PlayerController.singleton.aim();
     }
 
     [Obsolete]
@@ -37,7 +35,7 @@ public class Bow : MonoBehaviour
         fireState = false;
         for (int i = 0; i < numberOfPoints; i++) { points[i].active = false; }
         Invoke(nameof(shoot), 0.2f);
-        playerController.attack();
+        PlayerController.singleton.attack();
     }
 
     [Obsolete]

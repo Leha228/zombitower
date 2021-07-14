@@ -7,14 +7,25 @@ public class Enemy : MonoBehaviour
     public float speed;
     public GameObject enemy;
     private Object enemyRef;
-    private Object respawnPointPref;
     private GameObject respawnPoint;
 
     void Start()
     {
         enemyRef = Resources.Load("Prefabs/enemyPrefab");
-        respawnPointPref = Resources.Load("Prefabs/respawnPoint");
-        respawnPoint = (GameObject)Instantiate(respawnPointPref);
+        respawnPoint = GameObject.Find("respawnPoint");
+        StartCoroutine(Respawn(5f));
+    }
+
+    IEnumerator Respawn(float timeSecond) {
+        float counter = 0;
+
+        while (counter < timeSecond) {
+            counter += Time.deltaTime;
+            yield return null;
+        }
+
+        GameObject enemyCopy = (GameObject)Instantiate(enemyRef);
+        enemyCopy.transform.position = respawnPoint.transform.position;
     }
 
     void Update()
@@ -24,15 +35,8 @@ public class Enemy : MonoBehaviour
 
     private void run()
     {
-        transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
-    }
-
-    private void respawn() 
-    {
-        GameObject enemyCopy = (GameObject)Instantiate(enemyRef);
-        enemyCopy.transform.position = respawnPoint.transform.position;
-
-        Destroy(enemy);
+        transform.position = 
+            new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,6 +44,6 @@ public class Enemy : MonoBehaviour
         if (collision.collider.name != "arrow(Clone)") return;
         
         enemy.SetActive(false);
-        Invoke(nameof(respawn), 1f);
+        Destroy(enemy);
     }
 }
