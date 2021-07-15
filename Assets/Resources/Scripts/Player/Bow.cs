@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,19 +13,28 @@ public class Bow : MonoBehaviour
 
     private bool _coroutine = false;
 
-    IEnumerator Shoot(float timeSecond) {
-        float counter = 0;
-
-        while (counter < timeSecond) {
-            counter += Time.deltaTime;
-            yield return null;
-        }
-
-        Invoke("CreateArrow", 0.2f);
+    private void Update()
+    {
+        if (_coroutine) return;
+        
+        _coroutine = true;
+        Invoke("CreateArrow", 3f);
     }
 
     private void CreateArrow() {
+
+        if (!Enemy.singleton.enabled) return;
+
+        launchForce = Vector2.Distance(transform.position, Enemy.singleton.transform.position); 
+
+        if (Mathf.Round(launchForce) > 19) {
+             _coroutine = false; 
+             return;
+        }
+
         GameObject newArrow = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
-        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
+        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (launchForce - 1f);
+
+        _coroutine = false;
     }
 }

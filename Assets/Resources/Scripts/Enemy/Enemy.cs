@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public static Enemy singleton { get; private set; }
+
     public float speed;
     public GameObject enemy;
     private Object enemyRef;
     private GameObject respawnPoint;
 
+    private List<string> _collisions;
+
+    void Awake() { singleton = this; }
+
     void Start()
     {
+        _collisions = new List<string> {"arrow(Clone)", "peak(Clone)"};
+
         enemyRef = Resources.Load("Prefabs/enemyPrefab");
         respawnPoint = GameObject.Find("respawnPoint");
         StartCoroutine(Respawn(5f));
@@ -41,7 +49,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.name != "peak(Clone)") return;
+        if (!_collisions.Contains(collision.collider.name)) return;
         
         enemy.SetActive(false);
         Destroy(enemy);

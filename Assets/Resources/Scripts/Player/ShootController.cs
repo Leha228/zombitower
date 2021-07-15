@@ -34,7 +34,7 @@ public class ShootController : MonoBehaviour
     void Update()
     {
         if (_fireState) {
-            if (launchForce > 14) return;
+            if (launchForce > 16) return;
             launchForce += 4 * Time.deltaTime;
             Move();
         }
