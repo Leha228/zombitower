@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.name != "arrow(Clone)") return;
+        if (collision.collider.name != "peak(Clone)") return;
         
         enemy.SetActive(false);
         Destroy(enemy);
