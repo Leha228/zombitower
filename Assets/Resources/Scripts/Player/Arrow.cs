@@ -1,15 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Spine.Unity;
-using Spine;
 using System;
 
 public class Arrow : MonoBehaviour
 {
 
     Rigidbody2D rb;
-    private bool hasHit;
+    private bool _hasHit;
     public GameObject arrow;
 
 
@@ -18,19 +14,14 @@ public class Arrow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-    {
-
-    }
-
     private void FixedUpdate()
     {
-        rotate();
+        Rotate();
     }
 
-    private void rotate()
+    private void Rotate()
     {
-        if (!hasHit)
+        if (!_hasHit)
         {
             var dir = rb.velocity;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
@@ -42,7 +33,7 @@ public class Arrow : MonoBehaviour
     {
         if (collision.collider.name == "samurai") Destroy(arrow);
 
-        hasHit = true;
+        _hasHit = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
     }

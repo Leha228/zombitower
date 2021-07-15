@@ -15,65 +15,62 @@ public class Bow : MonoBehaviour
     GameObject[] points;
     public int numberOfPoints = 5;
     public float spaceBetweenPoint;
-    private bool createPoints = false;
-    private bool fireState = false;
+    private bool _createPoints = false;
+    private bool _fireState = false;
 
     void Start()
     {
         points = new GameObject[numberOfPoints];
-        createPoints = true;
+        _createPoints = true;
     }
 
-    public void launchForceDown() {
+    public void LaunchForceDown() {
         launchForce = 4;
-        fireState = true;
-        PlayerController.singleton.aim();
+        _fireState = true;
+        PlayerController.singleton.Aim();
     }
 
-    [Obsolete]
-    public void launchForceUp() {
-        fireState = false;
-        for (int i = 0; i < numberOfPoints; i++) { points[i].active = false; }
-        Invoke(nameof(shoot), 0.2f);
-        PlayerController.singleton.attack();
+    public void LaunchForceUp() {
+        _fireState = false;
+        for (int i = 0; i < numberOfPoints; i++) { points[i].SetActive(false); }
+        Invoke(nameof(Shoot), 0.2f);
+        PlayerController.singleton.Attack();
     }
 
-    [Obsolete]
     void Update()
     {
-        if (fireState) {
+        if (_fireState) {
             if (launchForce > 14) return;
             launchForce += 4 * Time.deltaTime;
-            move();
+            Move();
         }
     }
 
-    [Obsolete]
-    private void move()
+    private void Move()
     {       
-        if (createPoints)
+        if (_createPoints)
         {
             for (int i = 0; i < numberOfPoints; i++)
             {
                 points[i] = Instantiate(point, shootPoint.position, Quaternion.identity);
             }
-            createPoints = false;
+            _createPoints = false;
         }
 
         for (int i = 0; i < numberOfPoints; i++)
         {
-            points[i].active = true;
-            points[i].transform.position = pointPosition(i * spaceBetweenPoint);
+            points[i].SetActive(true);
+            points[i].transform.position = PointPosition(i * spaceBetweenPoint);
         }
     }
 
-    private void shoot()
+    private void Shoot()
     {
         GameObject newArrow = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
     }
 
-    Vector2 pointPosition(float t)
+    Vector2 PointPosition(float t)
     {
         Vector2 position = (Vector2)shootPoint.position +
             (Vector2)(transform.right * launchForce * t) + (Physics2D.gravity * (t * t) * 0.5f);

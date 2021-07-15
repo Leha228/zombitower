@@ -8,14 +8,14 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-    public static PlayerController singleton {get; private set;}
+    public static PlayerController singleton { get; private set;}
 
     public SkeletonAnimation skeletonAnimation;
     public SkeletonData skeletonData;
     public AnimationReferenceAsset idle, attacking, aiming, aiming1;
-    private string currentState;
-    private string prevState;
-    private string currentAnimation;
+    private string _currentState;
+    private string _prevState;
+    private string _currentAnimation;
     private Rigidbody2D rb;
 
     void Awake() { singleton = this; }
@@ -23,46 +23,41 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentState = "idle";
+        _currentState = "idle";
 
-        setCharacterState(currentState);
+        SetCharacterState(_currentState);
     }
 
-    void Update()
+    public void Attack()
     {
-
+        SetCharacterState("attack_aim");
     }
 
-    public void attack()
+    public void Aim()
     {
-        setCharacterState("attack_aim");
-    }
-
-    public void aim()
-    {
-        if (currentState.Equals("aim1")) return;
-        if (!currentState.Equals("aim")) { prevState = currentState; }
-        setCharacterState("aim");
+        if (_currentState.Equals("aim1")) return;
+        if (!_currentState.Equals("aim")) { _prevState = _currentState; }
+        SetCharacterState("aim");
     }
 
     public void setAnimation(AnimationReferenceAsset animation, bool loop, float timeScale)
     {
-        if (animation.name.Equals(currentAnimation)) { return; }
+        if (animation.name.Equals(_currentAnimation)) { return; }
 
         TrackEntry animationEntry = skeletonAnimation.state.SetAnimation(0, animation, loop);
         animationEntry.TimeScale = timeScale;
         animationEntry.Complete += AnimationEntry_Complete;
-        currentAnimation = animation.name;
+        _currentAnimation = animation.name;
     }
 
     private void AnimationEntry_Complete(Spine.TrackEntry trackEntry)
     {
-        if (currentState.Equals("jump")) { setCharacterState(prevState); }
-        if (currentState.Equals("attack_aim")) { setCharacterState("idle"); }
-        if (currentState.Equals("aim")) { setCharacterState("aim1"); }
+        if (_currentState.Equals("jump")) { SetCharacterState(_prevState); }
+        if (_currentState.Equals("attack_aim")) { SetCharacterState("idle"); }
+        if (_currentState.Equals("aim")) { SetCharacterState("aim1"); }
     }
 
-    public void setCharacterState(string state)
+    public void SetCharacterState(string state)
     {
         if (state.Equals("aim"))
             setAnimation(aiming, false, 1f);
@@ -73,6 +68,6 @@ public class PlayerController : MonoBehaviour
         else
             setAnimation(idle, true, 1f);
 
-        currentState = state;
+        _currentState = state;
     }
 }

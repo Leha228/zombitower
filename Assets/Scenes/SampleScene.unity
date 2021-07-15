@@ -400,7 +400,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -112.650024, y: 50.424988}
-  m_SizeDelta: {x: 225.30005, y: 100.85}
+  m_SizeDelta: {x: 225.30005, y: 100.849976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &519420028
 GameObject:
@@ -677,7 +677,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000002861023, y: 0}
-  m_SizeDelta: {x: 179.25, y: 51.51}
+  m_SizeDelta: {x: 179.25, y: 51.509995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911206224
 MonoBehaviour:
@@ -698,7 +698,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1647930594}
           m_TargetAssemblyTypeName: Bow, Assembly-CSharp
-          m_MethodName: launchForceDown
+          m_MethodName: LaunchForceDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -714,7 +714,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1647930594}
           m_TargetAssemblyTypeName: Bow, Assembly-CSharp
-          m_MethodName: launchForceUp
+          m_MethodName: LaunchForceUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
