@@ -18,19 +18,19 @@ public class Bow : MonoBehaviour
         if (_coroutine) return;
         
         _coroutine = true;
-        Invoke("CreateArrow", 3f);
+        Invoke("CreateArrow", 5f);
     }
 
     private void CreateArrow() {
-
-        if (!Enemy.singleton.enabled) return;
+        if (Enemy.singleton == null) return;
 
         launchForce = Vector2.Distance(transform.position, Enemy.singleton.transform.position); 
 
+        /*Debug.Log(Mathf.Round(launchForce));
         if (Mathf.Round(launchForce) > 19) {
              _coroutine = false; 
              return;
-        }
+        }*/
 
         GameObject newArrow = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (launchForce - 1f);

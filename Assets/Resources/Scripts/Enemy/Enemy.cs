@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
 
     void Awake() { singleton = this; }
 
+    //TODO: вынести респавн врагов в отдельный скрипт сцены
+
     void Start()
     {
         _collisions = new List<string> {"arrow(Clone)", "peak(Clone)"};
@@ -38,10 +40,10 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        run();
+        Run();
     }
 
-    private void run()
+    private void Run()
     {
         transform.position = 
             new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
