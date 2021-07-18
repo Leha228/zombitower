@@ -16,11 +16,6 @@ public class Arrow : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Rotate();
-    }
-
-    private void Rotate()
-    {
         if (!_hasHit)
         {
             var dir = rb.velocity;

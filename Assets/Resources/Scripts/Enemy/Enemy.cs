@@ -15,27 +15,12 @@ public class Enemy : MonoBehaviour
 
     void Awake() { singleton = this; }
 
-    //TODO: вынести респавн врагов в отдельный скрипт сцены
-
     void Start()
     {
         _collisions = new List<string> {"arrow(Clone)", "peak(Clone)"};
 
         enemyRef = Resources.Load("Prefabs/enemyPrefab");
         respawnPoint = GameObject.Find("respawnPoint");
-        StartCoroutine(Respawn(5f));
-    }
-
-    IEnumerator Respawn(float timeSecond) {
-        float counter = 0;
-
-        while (counter < timeSecond) {
-            counter += Time.deltaTime;
-            yield return null;
-        }
-
-        GameObject enemyCopy = (GameObject)Instantiate(enemyRef);
-        enemyCopy.transform.position = respawnPoint.transform.position;
     }
 
     void Update()
