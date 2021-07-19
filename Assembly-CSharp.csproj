@@ -37,15 +37,16 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Resources\Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Resources\Scripts\Enemy\RespawnEnemy.cs" />
      <Compile Include="Assets\Resources\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Resources\Scripts\Player\Arrow.cs" />
      <Compile Include="Assets\Resources\Scripts\Enemy\EnemyShoot.cs" />
      <Compile Include="Assets\Resources\Scripts\Player\Bow.cs" />
      <Compile Include="Assets\Resources\Scripts\Player\ShootController.cs" />
-     <Compile Include="Assets\Resources\Scripts\Enemy\RespawnEnemy.cs" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\Resources\Animat\robin\robin_hood.atlas.txt" />
      <None Include="Assets\Resources\Animat\enemy\samurai.atlas.txt" />
+     <None Include="Assets\Resources\Animat\enemy\Zombie_Great\zombie_great.atlas.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

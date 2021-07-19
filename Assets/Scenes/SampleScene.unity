@@ -989,7 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quantityEnemy: 3
-  enemyRef: {fileID: 5220102370774667233, guid: 6cfafcc67af2e744dba547898c6cc96d, type: 3}
+  enemyRef: {fileID: 3084494221314248360, guid: 285511efaae1c414e8bd5e1392e0a7f9, type: 3}
 --- !u!1 &1794918585
 GameObject:
   m_ObjectHideFlags: 0

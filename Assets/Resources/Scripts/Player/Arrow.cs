@@ -1,5 +1,5 @@
 using UnityEngine;
-using System;
+using System.Collections.Generic;
 
 public class Arrow : MonoBehaviour
 {
@@ -7,11 +7,13 @@ public class Arrow : MonoBehaviour
     Rigidbody2D rb;
     private bool _hasHit;
     public GameObject arrow;
-
+    
+    private List<string> _collisions;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        _collisions = new List<string> {"zombie_great", "samurai"};
     }
 
     private void FixedUpdate()
@@ -26,7 +28,7 @@ public class Arrow : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.name == "samurai") Destroy(arrow);
+        if (!_collisions.Contains(collision.collider.name)) Destroy(arrow);
 
         _hasHit = true;
         rb.velocity = Vector2.zero;
