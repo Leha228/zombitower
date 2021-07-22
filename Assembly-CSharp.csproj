@@ -46,6 +46,7 @@
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\Resources\Animat\robin\robin_hood.atlas.txt" />
      <None Include="Assets\Resources\Animat\enemy\samurai.atlas.txt" />
+     <None Include="Assets\Resources\Animat\tower\tower1.atlas.txt" />
      <None Include="Assets\Resources\Animat\enemy\Zombie_Great\zombie_great.atlas.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -1,8 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
+using Spine.Unity;
+using Spine;
 
 public class ShootController : MonoBehaviour
 {
+    public SkeletonAnimation skeletonAnimation;
+    public SkeletonData skeletonData;
+    public AnimationReferenceAsset idle, attacking, aiming;
 
     public GameObject peak;
     public float launchForce = 4f;
@@ -13,6 +17,7 @@ public class ShootController : MonoBehaviour
     public float spaceBetweenPoint;
     private bool _createPoints = false;
     private bool _fireState = false;
+    private string _currentState = "idle";
    
     void Start()
     {
@@ -27,27 +32,38 @@ public class ShootController : MonoBehaviour
 
     public void LaunchForceUp() {
         _fireState = false;
-        for (int i = 0; i < numberOfPoints; i++) { points[i].SetActive(false); }
+        for (int i = 0; i < numberOfPoints; i++) 
+            points[i].SetActive(false); 
+            
+        SetAnimation("attack", attacking, false);
         Shoot();
     }
     
     void Update()
     {
-        if (_fireState) {
+        if (_fireState) 
+        {
             if (launchForce > 16) return;
+            if (_currentState != "aim") SetAnimation("aim", aiming, false);
             launchForce += 4 * Time.deltaTime;
             Move();
-        }
+        } 
+        else 
+            if (_currentState != "idle") SetAnimation("idle", idle, true);
+    }
+
+    private void SetAnimation(string name, AnimationReferenceAsset animation, bool loop) {
+        _currentState = name;
+        skeletonAnimation.state.SetAnimation(0, animation, loop);
     }
 
     private void Move()
     {       
         if (_createPoints)
         {
-            for (int i = 0; i < numberOfPoints; i++)
-            {
+            for (int i = 0; i < numberOfPoints; i++) 
                 points[i] = Instantiate(point, transform.position, Quaternion.identity);
-            }
+
             _createPoints = false;
         }
 

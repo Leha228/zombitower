@@ -12,18 +12,26 @@ public class Enemy : MonoBehaviour
     public AnimationReferenceAsset slow, death;
     public float speed;
     public GameObject enemy;
+    private Transform shootPointLimit;
     private List<string> _collisions;
-    private bool _death = false;
+
+    private bool shootBool = true;
 
     void Awake() { singleton = this; }
 
     void Start()
     {
-        _collisions = new List<string> {"arrow(Clone)", "peak(Clone)"};
+        _collisions = new List<string> {"arrow(Clone)", "arrow 1(Clone)"};
+        shootPointLimit = GameObject.Find("shootPointLimit").transform;
     }
 
     void Update()
     {
+        if (shootBool && Mathf.Round(transform.position.x) == Mathf.Round(shootPointLimit.transform.position.x)) {
+            shootBool = false;
+            Bow.singleton.bowEvent.Invoke();
+        }
+
         transform.position = 
             new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
     }
@@ -37,11 +45,10 @@ public class Enemy : MonoBehaviour
     {
         if (!_collisions.Contains(collision.collider.name)) return;
         
-        if (!_death) 
+        if (collision.collider.name == _collisions[0]) 
         {
             skeletonAnimation.state.SetAnimation(0, slow, true);
             speed = speed / 2;
-            _death = true;
         } 
         else 
         {

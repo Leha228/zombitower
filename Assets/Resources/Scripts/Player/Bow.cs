@@ -1,40 +1,30 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Bow : MonoBehaviour
 {
+    public static Bow singleton { get; private set; }
+    public UnityEvent bowEvent;
+
     public GameObject arrow;
     public GameObject player;
     public float launchForce = 4;
     public Transform shootPoint;
+    public Transform shootPointLimit;
 
-    private bool _coroutine = false;
+    void Awake() { singleton = this; }
 
-    private void Update()
-    {
-        if (_coroutine) return;
-        
-        _coroutine = true;
-        Invoke("CreateArrow", 5f);
+    private void Start() {
+        bowEvent = new UnityEvent();
+        bowEvent.AddListener(CreateArrow);
     }
 
     private void CreateArrow() {
-        if (Enemy.singleton == null) return;
+        Debug.Log("Shoot");
 
-        launchForce = Vector2.Distance(transform.position, Enemy.singleton.transform.position); 
-
-        /*Debug.Log(Mathf.Round(launchForce));
-        if (Mathf.Round(launchForce) > 19) {
-             _coroutine = false; 
-             return;
-        }*/
-
+        launchForce = Vector2.Distance(transform.position, shootPointLimit.transform.position); 
+        
         GameObject newArrow = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
-        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (launchForce - 1f);
-
-        _coroutine = false;
+        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (launchForce - 3f);
     }
 }

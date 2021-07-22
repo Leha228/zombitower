@@ -12,19 +12,12 @@ public class EnemyShoot : MonoBehaviour
     private float launchForce;
     private bool movePlayer = true;
 
-    void Start()
-    {
- 
-    }
-
-    [Obsolete]
     void Update()
     {
-        move();
+        Move();
     }
 
-    [Obsolete]
-    private void move()
+    private void Move()
     {
 
         Vector2 bowPosition = transform.position;
@@ -36,10 +29,10 @@ public class EnemyShoot : MonoBehaviour
 
         if (!movePlayer) return;
         movePlayer = false;
-        Invoke(nameof(shoot), 3f);
+        Invoke("Shoot", 3f);
     }
 
-    private void shoot()
+    private void Shoot()
     {
         Vector2 bowPosition = transform.position;
         Vector2 playerPosition = player.transform.position;
