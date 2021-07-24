@@ -23,7 +23,11 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        _collisions = new List<string> {"arrow(Clone)", "arrow 1(Clone)", "knight(Clone)"};
+        _collisions = new List<string> {
+            "arrow(Clone)", 
+            "arrow 1(Clone)", 
+            "knight(Clone)"
+        };
         shootPointLimit = GameObject.Find("shootPointLimit").transform;
     }
 
@@ -46,6 +50,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void DestroyEnemy() {
+        EventManager.singleton.SetProgress();
         enemy.SetActive(false);
         Destroy(enemy);
     }
@@ -54,19 +59,15 @@ public class Enemy : MonoBehaviour
     {
         if (!_collisions.Contains(collision.collider.name)) return;
         
-        if (collision.collider.name == _collisions[0]) 
-        {
+        if (collision.collider.name == _collisions[0]) {
+            // замедление хотьбы
             skeletonAnimation.state.SetAnimation(0, slow, true);
             speed = speed / 2;
-        } 
-        if (collision.collider.name == _collisions[2]) { 
-            //skeletonAnimation.state.ClearTrack(0); анимация атаки
+        } else if (collision.collider.name == _collisions[2]) { 
+            // анимация атаки
             speed = 0; 
-        }
-        else 
-        {
+        } else {
             live -= ShootController.singleton.damage;
-
             if (live <= 0) {
                 DeathAnimation();
             }
