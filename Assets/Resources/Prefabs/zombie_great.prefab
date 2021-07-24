@@ -186,3 +186,4 @@ MonoBehaviour:
   death: {fileID: 11400000, guid: c2408560c82085a4b8464daf827444a3, type: 2}
   speed: 1.5
   enemy: {fileID: 3084494221314248360}
+  live: 30

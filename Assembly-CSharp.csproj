@@ -36,16 +36,21 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resources\Scripts\Enemy\Enemy.cs" />
-     <Compile Include="Assets\Resources\Scripts\Enemy\RespawnEnemy.cs" />
-     <Compile Include="Assets\Resources\Scripts\Player\PlayerController.cs" />
-     <Compile Include="Assets\Resources\Scripts\Player\Arrow.cs" />
-     <Compile Include="Assets\Resources\Scripts\Enemy\EnemyShoot.cs" />
-     <Compile Include="Assets\Resources\Scripts\Player\Bow.cs" />
-     <Compile Include="Assets\Resources\Scripts\Player\ShootController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Enemy\RespawnEnemy.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Player\PlayerController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Model\TowerModel.cs" />
+     <Compile Include="Assets\Resources\Scripts\EventManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Player\Arrow.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Enemy\EnemyShoot.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Player\Bow.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\ShootController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Model\KnightModel.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\KnightController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Model\MobModel.cs" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\Resources\Animat\robin\robin_hood.atlas.txt" />
-     <None Include="Assets\Resources\Animat\enemy\samurai.atlas.txt" />
+     <None Include="Assets\Resources\Animat\knight\knight.atlas.txt" />
      <None Include="Assets\Resources\Animat\tower\tower1.atlas.txt" />
      <None Include="Assets\Resources\Animat\enemy\Zombie_Great\zombie_great.atlas.txt" />
     <Reference Include="UnityEngine">
