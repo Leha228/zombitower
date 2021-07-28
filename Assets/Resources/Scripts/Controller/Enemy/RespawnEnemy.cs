@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class RespawnEnemy : MonoBehaviour
 {
-    public GameObject enemyRef;
     private bool _coroutine = false;
     private int _currentEnemy = 0;
 
@@ -23,13 +22,13 @@ public class RespawnEnemy : MonoBehaviour
         }
 
         _coroutine = false;
-        GameObject enemyCopy = Instantiate(DataHolder.listEnemy[_currentEnemy - 1]);
+        GameObject enemyCopy = Instantiate(DataHolder.enemyList[_currentEnemy - 1]);
         enemyCopy.transform.position = transform.position;
     }
 
     void Update()
     {
-        if (!_coroutine && _currentEnemy != DataHolder.listEnemy.Length) 
+        if (!_coroutine && _currentEnemy != DataHolder.enemyList.Length) 
             StartCoroutine("Respawn", 5f);
     }
 }

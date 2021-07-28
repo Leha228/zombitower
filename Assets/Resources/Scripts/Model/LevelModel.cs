@@ -3,7 +3,7 @@ using UnityEngine;
 public class LevelModel : MonoBehaviour
 {
     public static LevelModel singleton { get; private set; }
-    [SerializeField] public GameObject[] listEnemy;
+    [SerializeField] public GameObject[] enemyList;
 
     private void Awake() {
         singleton = this;

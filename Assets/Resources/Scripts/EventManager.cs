@@ -1,13 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
     public static EventManager singleton { get; private set; }
 
     [SerializeField] public GameObject menu;
-    public int progress = 0;
+    private int _progress = 0;
     private int _numberLevel = DataHolder.numberLevel;
-    private int _countEnemy = DataHolder.listEnemy.Length;
+    private int _countEnemy = DataHolder.enemyList.Length;
 
     private void Awake() { singleton = this; }
 
@@ -21,11 +22,14 @@ public class EventManager : MonoBehaviour
     }
 
     private void OpenGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.open, false); 
+    
     private void CloseGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.close, false); 
 
+    public int GetProgress() => _progress;
+
     public void SetProgress() {
-        progress = (int)(100 / _countEnemy) + progress;
-        if (progress >= 99) Debug.Log("Win"); 
+        _progress = (int)(100 / _countEnemy) + _progress;
+        if (_progress >= 99) Invoke("nextLevel", 3f); 
     }
 
     public void OnMenu() {
@@ -36,5 +40,11 @@ public class EventManager : MonoBehaviour
     public void OnResume() {
         menu.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    private void nextLevel() {
+        if (_numberLevel == PlayerPrefs.GetInt("countLevel", 1))
+            PlayerPrefs.SetInt("countLevel", PlayerPrefs.GetInt("countLevel", 1) + 1);
+        SceneManager.LoadScene("Map");
     }
 }
