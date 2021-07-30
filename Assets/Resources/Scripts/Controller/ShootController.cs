@@ -7,10 +7,10 @@ public class ShootController : MonoBehaviour
     public static ShootController singleton { get; private set; }
 
     public GameObject peak;
-    public float launchForce = 4f;
-    public int damage;
     public GameObject point;
     GameObject[] points;
+    public float launchForce = 4f;
+    public int damage;
     public int numberOfPoints = 5;
     public float spaceBetweenPoint;
 
@@ -33,13 +33,12 @@ public class ShootController : MonoBehaviour
 
     public void LaunchForceUp() {
         _fireState = false;
-        
+
         for (int i = 0; i < numberOfPoints; i++) 
             points[i].SetActive(false); 
-            
+
         _currentState = "attack";
         TowerModel.singleton.SetAnimation(TowerModel.singleton.attack, false);
-
         Shoot();
     }
     

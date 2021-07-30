@@ -25,11 +25,16 @@ public class TowerModel : MonoBehaviour
     public void SetAnimation(AnimationReferenceAsset animation, bool loop) 
         => skeletonAnimation.state.SetAnimation(0, animation, loop);
 
-    void OnCollisionStay2D(Collision2D other) {
+    private void OnCollisionStay2D(Collision2D other) {
          if (!_collisions.Contains(other.collider.name)) return;
          if (other.collider.name == _collisions[0]) {
              if (!_coroutine) StartCoroutine("Damage", 1f);
          }
+    }
+
+    private void CheckDamage() {
+        if (live < 1) 
+            EventManager.singleton.YouDie();
     }
 
     IEnumerator Damage(float timeSecond) {
@@ -43,5 +48,6 @@ public class TowerModel : MonoBehaviour
 
         _coroutine = false;
         live -= 10;
+        CheckDamage();
     }
 }

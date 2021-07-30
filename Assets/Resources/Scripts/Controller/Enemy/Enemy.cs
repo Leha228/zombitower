@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Spine.Unity;
 using Spine;
 
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     public int live;
 
     private Transform shootPointLimit;
+    private GameObject _progress;
     private List<string> _collisions;
     private bool shootBool = true;
 
@@ -29,6 +31,8 @@ public class Enemy : MonoBehaviour
             "knight(Clone)"
         };
         shootPointLimit = GameObject.Find("shootPointLimit").transform;
+        _progress = GameObject.Find("ButtonProgress");
+
     }
 
     void Update()
@@ -51,6 +55,7 @@ public class Enemy : MonoBehaviour
 
     private void DestroyEnemy() {
         EventManager.singleton.SetProgress();
+        _progress.GetComponentInChildren<Text>().text = EventManager.singleton.GetProgress().ToString() + "%";
         enemy.SetActive(false);
         Destroy(enemy);
     }

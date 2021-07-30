@@ -11,6 +11,9 @@ public class MenuManager : MonoBehaviour
         //PlayerPrefs.DeleteAll();
         int countLevel = PlayerPrefs.GetInt("countLevel", 1);
 
+        if (countLevel > levelList.Length)
+            countLevel = levelList.Length;
+
         for (int currentLevel = 0; currentLevel < countLevel; currentLevel++) {
             if (currentLevel < countLevel) {
                 levelList[currentLevel].GetComponent<Button>().interactable = true;
