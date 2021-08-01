@@ -49,14 +49,21 @@
      <Compile Include="Assets\Resources\Scripts\Controller\Enemy\EnemyShoot.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Player\Bow.cs" />
      <Compile Include="Assets\Resources\Scripts\Model\MobModel.cs" />
+     <Compile Include="Assets\Resources\Scripts\MainMenuManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Model\LevelModel.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\ShootController.cs" />
-     <Compile Include="Assets\Resources\Scripts\MainMenuManager.cs" />
      <None Include="Assets\Spine\version.txt" />
-     <None Include="Assets\Resources\Animat\robin\robin_hood.atlas.txt" />
-     <None Include="Assets\Resources\Animat\knight\knight.atlas.txt" />
-     <None Include="Assets\Resources\Animat\tower\tower1.atlas.txt" />
-     <None Include="Assets\Resources\Animat\enemy\Zombie_Great\zombie_great.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Herous\Robin\robin_hood.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Tower\Tower_Rome\tower2.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Zombie\Zombie_Armored\armored_zombie.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Zombie\Zombie_Ax\ax_zombie.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Mobs\knight\knight.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Tower\Tower_England\tower1.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Tower\Tower_Barbarian\Bullet\bullet.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Zombie\Zombie_Great\zombie_great.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Tower\Tower_Barbarian\tower3.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Zombie\Zombie_Simple\simple_zombie.atlas.txt" />
+     <None Include="Assets\Resources\Animat\Zombie\Zombie_Archer\zombie_archer.atlas.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

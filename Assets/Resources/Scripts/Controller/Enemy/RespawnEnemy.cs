@@ -8,6 +8,7 @@ public class RespawnEnemy : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         StartCoroutine("Respawn", 1f);
     }
 

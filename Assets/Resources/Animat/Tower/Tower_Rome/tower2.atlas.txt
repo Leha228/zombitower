@@ -1,0 +1,125 @@
+
+tower2.png
+size: 1220,468
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arrow
+  rotate: true
+  xy: 953, 294
+  size: 172, 91
+  orig: 177, 94
+  offset: 2, 1
+  index: -1
+arrow_button
+  rotate: false
+  xy: 719, 2
+  size: 67, 49
+  orig: 69, 51
+  offset: 1, 1
+  index: -1
+base1
+  rotate: true
+  xy: 1067, 159
+  size: 152, 82
+  orig: 152, 83
+  offset: 0, 0
+  index: -1
+base2
+  rotate: true
+  xy: 1136, 15
+  size: 142, 82
+  orig: 144, 92
+  offset: 1, 1
+  index: -1
+base3
+  rotate: true
+  xy: 976, 132
+  size: 160, 89
+  orig: 160, 89
+  offset: 0, 0
+  index: -1
+button
+  rotate: false
+  xy: 1046, 41
+  size: 88, 89
+  orig: 88, 89
+  offset: 0, 0
+  index: -1
+flag
+  rotate: false
+  xy: 719, 256
+  size: 145, 210
+  orig: 145, 210
+  offset: 0, 0
+  index: -1
+grid
+  rotate: false
+  xy: 866, 279
+  size: 85, 187
+  orig: 85, 187
+  offset: 0, 0
+  index: -1
+inside
+  rotate: false
+  xy: 719, 53
+  size: 127, 201
+  orig: 129, 203
+  offset: 1, 1
+  index: -1
+mask1
+  rotate: true
+  xy: 866, 256
+  size: 21, 22
+  orig: 25, 31
+  offset: 0, 1
+  index: -1
+mask_gate
+  rotate: false
+  xy: 848, 58
+  size: 126, 196
+  orig: 126, 196
+  offset: 0, 0
+  index: -1
+pinion1
+  rotate: false
+  xy: 1046, 313
+  size: 151, 153
+  orig: 151, 153
+  offset: 0, 0
+  index: -1
+pinion2
+  rotate: false
+  xy: 976, 60
+  size: 68, 70
+  orig: 68, 71
+  offset: 0, 0
+  index: -1
+pinion3
+  rotate: false
+  xy: 788, 3
+  size: 47, 48
+  orig: 47, 48
+  offset: 0, 0
+  index: -1
+string
+  rotate: false
+  xy: 915, 18
+  size: 116, 38
+  orig: 116, 39
+  offset: 0, 1
+  index: -1
+string1_1
+  rotate: false
+  xy: 837, 6
+  size: 76, 45
+  orig: 76, 45
+  offset: 0, 0
+  index: -1
+tower_full
+  rotate: true
+  xy: 2, 4
+  size: 462, 715
+  orig: 462, 715
+  offset: 0, 0
+  index: -1

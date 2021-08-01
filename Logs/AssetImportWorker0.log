@@ -15,11 +15,11 @@ C:/Users/root/Documents/zombitower
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64053
+53492
 Successfully changed project path to: C:/Users/root/Documents/zombitower
 C:/Users/root/Documents/zombitower
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 79.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,451 +35,1411 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003364 seconds.
+Registered in 0.003707 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 74.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.035 seconds
+- Completed reload, in  2.809 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007227 seconds.
+Registered in 0.007301 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 74.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.880 seconds
+- Completed reload, in  1.761 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2349 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 120.7 MB.
 System memory in use after: 119.5 MB.
 
 Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 2786.
-Total: 5.307800 ms (FindLiveObjects: 0.473100 ms CreateObjectMapping: 0.132700 ms MarkObjects: 3.051400 ms  DeleteObjects: 1.648800 ms)
+Total: 4.732200 ms (FindLiveObjects: 0.435200 ms CreateObjectMapping: 0.138800 ms MarkObjects: 2.550200 ms  DeleteObjects: 1.606400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Prefabs/image/Game/YouDie/close.png
-  artifactKey: Guid(7a507953edf153c4182b59de05c2360a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/image/Game/YouDie/close.png using Guid(7a507953edf153c4182b59de05c2360a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6202b45f02d6ec0db979b1a28293ac2') in 0.157811 seconds
-  Import took 0.163294 seconds .
+  path: Assets/Resources/Animat/tower/tower1.png
+  artifactKey: Guid(e18ecc95ac5e3314b8ceeeabfc038b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/tower/tower1.png using Guid(e18ecc95ac5e3314b8ceeeabfc038b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe3bf41bc2c4e3365584f53c93eeaf4') in 0.130937 seconds
+  Import took 0.135703 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/Resources/Prefabs/image/Game/YouDie/continue.png
-  artifactKey: Guid(f223f25d933238d41bdbc22cfff278ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/image/Game/YouDie/continue.png using Guid(f223f25d933238d41bdbc22cfff278ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8d8c64ab9dbe55e51a221a9deacf10') in 0.047872 seconds
-  Import took 0.058969 seconds .
+  Time since last request: 18.755704 seconds.
+  path: Assets/Resources/Animat/Herous
+  artifactKey: Guid(adad0f1599d516b43bd22f5e48227f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous using Guid(adad0f1599d516b43bd22f5e48227f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac4ca8a50051010db18f108a3fad155') in 0.009541 seconds
+  Import took 0.014876 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 240.075694 seconds.
-  path: Assets/Resources/Scripts/MenuManager.cs
-  artifactKey: Guid(be37b35ff5ea01046894067dca5ed71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Scripts/MenuManager.cs using Guid(be37b35ff5ea01046894067dca5ed71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d50e22dccc16b1bbbec04c1ac89d58f') in 0.041654 seconds
-  Import took 0.049597 seconds .
+  Time since last request: 9.397561 seconds.
+  path: Assets/Resources/Animat/Zombie
+  artifactKey: Guid(eeb207638398691488e66495685ece0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie using Guid(eeb207638398691488e66495685ece0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2ca53e48cb3a0bfecef9084e18903d') in 0.011892 seconds
+  Import took 0.019281 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009525 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.682 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.2 MB.
-System memory in use after: 120.0 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2798.
-Total: 4.888200 ms (FindLiveObjects: 0.468800 ms CreateObjectMapping: 0.149700 ms MarkObjects: 2.616600 ms  DeleteObjects: 1.651300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 332.570580 seconds.
-  path: Assets/Scenes/Map.unity
-  artifactKey: Guid(098f82337f6089340b3c1a13662b61c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Map.unity using Guid(098f82337f6089340b3c1a13662b61c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f07a9acd0bb9755f78ffcaacf6226d') in 0.026411 seconds
-  Import took 0.032381 seconds .
+  Time since last request: 10.977692 seconds.
+  path: Assets/Resources/Animat/Mobs
+  artifactKey: Guid(da934464548481c4f902085d31fa6015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Mobs using Guid(da934464548481c4f902085d31fa6015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bfd3f9a400e344cdc15a7bd5debdbe') in 0.008965 seconds
+  Import took 0.013775 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006786 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.775 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.2 MB.
-System memory in use after: 120.1 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2802.
-Total: 4.834700 ms (FindLiveObjects: 0.449300 ms CreateObjectMapping: 0.130700 ms MarkObjects: 2.526300 ms  DeleteObjects: 1.727200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 56.376806 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c07e48750b669653052386372a1317') in 0.030822 seconds
-  Import took 0.037005 seconds .
+  Time since last request: 9.839673 seconds.
+  path: Assets/Resources/Animat/Tower
+  artifactKey: Guid(a392ea6ac28e5b04f92b52681a988d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower using Guid(a392ea6ac28e5b04f92b52681a988d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57b981fc02bf934c87e2fa59ec839ad') in 0.010481 seconds
+  Import took 0.015310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.049296 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_England
+  artifactKey: Guid(f184852e9af787f4cb15fe5bbc53aa34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_England using Guid(f184852e9af787f4cb15fe5bbc53aa34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84c049df6f4fef581a1812d729903cc') in 0.009815 seconds
+  Import took 0.014880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.793049 seconds.
+  path: Assets/Resources/Animat/Tower/tower1.atlas.txt
+  artifactKey: Guid(97b3a61a95250d8459fb7a35ad81eb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/tower1.atlas.txt using Guid(97b3a61a95250d8459fb7a35ad81eb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53bdb4845eebdb43cdf5cbc5cc71569') in 0.029074 seconds
+  Import took 0.034771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020576 seconds.
+  path: Assets/Resources/Animat/Tower/tower1.atlas.txt
+  artifactKey: Guid(97b3a61a95250d8459fb7a35ad81eb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/tower1.atlas.txt using Guid(97b3a61a95250d8459fb7a35ad81eb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53bdb4845eebdb43cdf5cbc5cc71569') in 0.005081 seconds
+  Import took 0.011211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.822745 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome
+  artifactKey: Guid(9eacb6ee70bab3d4fae7218e2850fba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome using Guid(9eacb6ee70bab3d4fae7218e2850fba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b058932536a867d671b9891a66a99e18') in 0.010358 seconds
+  Import took 0.016314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005804 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome
+  artifactKey: Guid(9eacb6ee70bab3d4fae7218e2850fba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome using Guid(9eacb6ee70bab3d4fae7218e2850fba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b058932536a867d671b9891a66a99e18') in 0.003102 seconds
+  Import took 0.009929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.308362 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/tower2.png
+  artifactKey: Guid(7f1958fd685e03840b6d12228701ecce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/tower2.png using Guid(7f1958fd685e03840b6d12228701ecce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c54a5b78949f79b44fe1b389da541d5') in 0.039743 seconds
+  Import took 0.045874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/tower2_SkeletonData.asset
+  artifactKey: Guid(13f4e7e60fbb7aa48a878989f585076b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/tower2_SkeletonData.asset using Guid(13f4e7e60fbb7aa48a878989f585076b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbb149009b7541e1b508df333d2873e') in 0.355640 seconds
+  Import took 0.364556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/tower2_Material.mat
+  artifactKey: Guid(19dc1e9ec3bc54a4fa70908fcda9e8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/tower2_Material.mat using Guid(19dc1e9ec3bc54a4fa70908fcda9e8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22fba2cd25c1d68906b60f6d0a96e67') in 0.063514 seconds
+  Import took 0.068726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/tower2_Atlas.asset
+  artifactKey: Guid(8e598898b1768cd469128ede640d8937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/tower2_Atlas.asset using Guid(8e598898b1768cd469128ede640d8937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28442eeab680cbd2937902851dd304f4') in 0.013958 seconds
+  Import took 0.021427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.074054 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets
+  artifactKey: Guid(f8d5b554212330b49a0471ff70c11716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets using Guid(f8d5b554212330b49a0471ff70c11716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f3a757c3f8aa7fab8bc048abf46522') in 0.010353 seconds
+  Import took 0.015707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006702 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets
+  artifactKey: Guid(f8d5b554212330b49a0471ff70c11716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets using Guid(f8d5b554212330b49a0471ff70c11716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f3a757c3f8aa7fab8bc048abf46522') in 0.003729 seconds
+  Import took 0.009234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.209923 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/attack1.asset
+  artifactKey: Guid(d6f9b96955f57264ea6d16dfdd4c65bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/attack1.asset using Guid(d6f9b96955f57264ea6d16dfdd4c65bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09df263186c03f6f4ff6d7662dfe8e8f') in 0.043162 seconds
+  Import took 0.049497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/open.asset
+  artifactKey: Guid(8d8fbd52105f85a4fb3b608ef1f8c0ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/open.asset using Guid(8d8fbd52105f85a4fb3b608ef1f8c0ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9a1cfb017e2504bc02c7e24fa0e5d4') in 0.030981 seconds
+  Import took 0.036003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/idle.asset
+  artifactKey: Guid(aa4e8b19f6cf5994fb734554716186c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/idle.asset using Guid(aa4e8b19f6cf5994fb734554716186c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda93a39c9c8f7b7d585ca746eb8d9bf') in 0.038834 seconds
+  Import took 0.043652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/attack2.asset
+  artifactKey: Guid(c03c80d712465244192df09f248da725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/attack2.asset using Guid(c03c80d712465244192df09f248da725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78aa302e823c68f199c5acab016e8875') in 0.039410 seconds
+  Import took 0.044421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/damage.asset
+  artifactKey: Guid(e1fbb626ab79278478139ad296871b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/damage.asset using Guid(e1fbb626ab79278478139ad296871b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93aeb524e57d72d0e55d93635971765') in 0.041304 seconds
+  Import took 0.045786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/button.asset
+  artifactKey: Guid(a51996adbf5a31248b3af19325f8203c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/button.asset using Guid(a51996adbf5a31248b3af19325f8203c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0818116d6a9cc2be61524140de75c99') in 0.035258 seconds
+  Import took 0.040472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/close.asset
+  artifactKey: Guid(0fb4fb387e1cec747b8aea634a6e86a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/close.asset using Guid(0fb4fb387e1cec747b8aea634a6e86a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e22f153402b17c1137914e64eb1f983') in 0.028319 seconds
+  Import took 0.033497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/button.asset
+  artifactKey: Guid(a51996adbf5a31248b3af19325f8203c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Rome/ReferenceAssets/button.asset using Guid(a51996adbf5a31248b3af19325f8203c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0818116d6a9cc2be61524140de75c99') in 0.040489 seconds
+  Import took 0.045078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.787823 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_England/tower1.png
+  artifactKey: Guid(e18ecc95ac5e3314b8ceeeabfc038b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_England/tower1.png using Guid(e18ecc95ac5e3314b8ceeeabfc038b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da97099e4f010843e95747cbe2d68e9') in 0.022980 seconds
+  Import took 0.030653 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007465 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.716 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.3 MB.
-System memory in use after: 120.1 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2806.
-Total: 5.081900 ms (FindLiveObjects: 0.460800 ms CreateObjectMapping: 0.137700 ms MarkObjects: 2.601100 ms  DeleteObjects: 1.880700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007105 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.782 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.3 MB.
-System memory in use after: 120.1 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2810.
-Total: 5.281100 ms (FindLiveObjects: 0.480200 ms CreateObjectMapping: 0.134300 ms MarkObjects: 2.690000 ms  DeleteObjects: 1.974300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006976 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.687 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.2 MB.
-System memory in use after: 120.0 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2814.
-Total: 4.896100 ms (FindLiveObjects: 0.457900 ms CreateObjectMapping: 0.131700 ms MarkObjects: 2.481700 ms  DeleteObjects: 1.823400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008655 seconds.
+Registered in 0.007174 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.776 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.3 MB.
-System memory in use after: 120.2 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2818.
-Total: 5.009600 ms (FindLiveObjects: 0.452300 ms CreateObjectMapping: 0.125600 ms MarkObjects: 2.541100 ms  DeleteObjects: 1.888800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006845 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.711 seconds
+- Completed reload, in  1.664 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
 Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.3 MB.
-System memory in use after: 120.2 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2822.
-Total: 5.083800 ms (FindLiveObjects: 0.473800 ms CreateObjectMapping: 0.120700 ms MarkObjects: 2.570100 ms  DeleteObjects: 1.917900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 752.539853 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95cb97ba9f3df48531df8caceff13c16') in 0.029047 seconds
-  Import took 0.035742 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008722 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.062 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.2 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2826.
-Total: 7.079200 ms (FindLiveObjects: 0.672700 ms CreateObjectMapping: 0.150100 ms MarkObjects: 3.572800 ms  DeleteObjects: 2.681500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006935 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.787 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.2 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2830.
-Total: 5.094900 ms (FindLiveObjects: 0.474400 ms CreateObjectMapping: 0.122000 ms MarkObjects: 2.569900 ms  DeleteObjects: 1.926800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007259 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.789 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.2 MB.
+System memory in use before: 121.6 MB.
+System memory in use after: 120.5 MB.
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2834.
-Total: 5.343300 ms (FindLiveObjects: 0.432000 ms CreateObjectMapping: 0.133000 ms MarkObjects: 2.764900 ms  DeleteObjects: 2.011900 ms)
+Total: 5.279300 ms (FindLiveObjects: 0.513100 ms CreateObjectMapping: 0.126900 ms MarkObjects: 2.732400 ms  DeleteObjects: 1.905000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
+Received Import Request.
+  Time since last request: 111.483779 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_England/ReferenceAssets/button.asset
+  artifactKey: Guid(23972e7cdc247ce418436add61fa576e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_England/ReferenceAssets/button.asset using Guid(23972e7cdc247ce418436add61fa576e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1470792eeb775b44f860af53746e35') in 0.291158 seconds
+  Import took 0.302295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_England/ReferenceAssets/damage.asset
+  artifactKey: Guid(198c7260bea581847a0f36694b4c0e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_England/ReferenceAssets/damage.asset using Guid(198c7260bea581847a0f36694b4c0e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd532361843d011c01d098d6347a8ef5c') in 0.032512 seconds
+  Import took 0.037443 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006841 seconds.
+Registered in 0.007113 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.821 seconds
+- Completed reload, in  1.702 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.5 MB.
-System memory in use after: 120.3 MB.
+System memory in use before: 121.7 MB.
+System memory in use after: 120.5 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2838.
-Total: 6.937200 ms (FindLiveObjects: 0.461300 ms CreateObjectMapping: 0.133300 ms MarkObjects: 3.258800 ms  DeleteObjects: 3.081400 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2839.
+Total: 4.962000 ms (FindLiveObjects: 0.439200 ms CreateObjectMapping: 0.137300 ms MarkObjects: 2.566800 ms  DeleteObjects: 1.817000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
+Received Import Request.
+  Time since last request: 54.641469 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_
+  artifactKey: Guid(dda8b7cd0f42e184c9a1db01fe81445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_ using Guid(dda8b7cd0f42e184c9a1db01fe81445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2112f2e6845b2d033d95ab37d150f96a') in 0.022892 seconds
+  Import took 0.032044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.819070 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_barbarian
+  artifactKey: Guid(dda8b7cd0f42e184c9a1db01fe81445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_barbarian using Guid(dda8b7cd0f42e184c9a1db01fe81445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ecbfdd06d2c82c92093fcb1a9c4c2c') in 0.008804 seconds
+  Import took 0.013633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.078063 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian
+  artifactKey: Guid(dda8b7cd0f42e184c9a1db01fe81445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian using Guid(dda8b7cd0f42e184c9a1db01fe81445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625b4f3027c6378d6a94a88e349afc28') in 0.019831 seconds
+  Import took 0.026012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.638406 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/tower3.png
+  artifactKey: Guid(4dd5ba280e6ce4343b16518044b0014d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/tower3.png using Guid(4dd5ba280e6ce4343b16518044b0014d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efa04f0cc99ab10ba719ee8e33d2d22') in 0.050019 seconds
+  Import took 0.055148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/tower3_SkeletonData.asset
+  artifactKey: Guid(94bf4f085ff89fa49b5b969031ceaab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/tower3_SkeletonData.asset using Guid(94bf4f085ff89fa49b5b969031ceaab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39f7bae2cf6485988dc637ed4c18d4a') in 0.268850 seconds
+  Import took 0.278919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/tower3_Atlas.asset
+  artifactKey: Guid(7a732a8e9d178b94d876a1e706868537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/tower3_Atlas.asset using Guid(7a732a8e9d178b94d876a1e706868537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711c2fc8a311589c8eb35560c1f20999') in 0.013396 seconds
+  Import took 0.018666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/tower3_Material.mat
+  artifactKey: Guid(cc530f4a9d2f54a4fbd3d8b4ae5a7c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/tower3_Material.mat using Guid(cc530f4a9d2f54a4fbd3d8b4ae5a7c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc4ee809319973db64987de417c1f2c') in 0.035198 seconds
+  Import took 0.040214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.209959 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets
+  artifactKey: Guid(4cb2e6220d64dbf438253bcb6c050664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets using Guid(4cb2e6220d64dbf438253bcb6c050664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a156a092556efee48dd709b1f07c79b9') in 0.004613 seconds
+  Import took 0.009763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007687 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets
+  artifactKey: Guid(4cb2e6220d64dbf438253bcb6c050664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets using Guid(4cb2e6220d64dbf438253bcb6c050664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a156a092556efee48dd709b1f07c79b9') in 0.003314 seconds
+  Import took 0.009368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.168815 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/attack1.asset
+  artifactKey: Guid(2ac6c068a54ce6e43912c68462d2dee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/attack1.asset using Guid(2ac6c068a54ce6e43912c68462d2dee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3207d29c694bf2809721db33299c1d') in 0.033915 seconds
+  Import took 0.038909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/damage.asset
+  artifactKey: Guid(e257abc52dc78a54484f860fbccfc5ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/damage.asset using Guid(e257abc52dc78a54484f860fbccfc5ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbb0cd2ee90f500355d09d077c94b4af') in 0.026877 seconds
+  Import took 0.031696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/close.asset
+  artifactKey: Guid(e342e0500ffdf5045a8405bb4e3c6b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/close.asset using Guid(e342e0500ffdf5045a8405bb4e3c6b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb2554e3408cfa3653daa7fe87dd915') in 0.028904 seconds
+  Import took 0.033623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/button.asset
+  artifactKey: Guid(b798c37a01cd29b4388621bd996cf845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/button.asset using Guid(b798c37a01cd29b4388621bd996cf845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119e69fc79603c748dca6ba5d27a070b') in 0.027013 seconds
+  Import took 0.031723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/open.asset
+  artifactKey: Guid(b74b67884da9e5f4b987ea5c3e8c4252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/open.asset using Guid(b74b67884da9e5f4b987ea5c3e8c4252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e125f483d4b02916d0d901367285420') in 0.030355 seconds
+  Import took 0.035282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/idle.asset
+  artifactKey: Guid(c09344178eedc974bad545f439ec363a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/idle.asset using Guid(c09344178eedc974bad545f439ec363a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b9012f1ef0b6e2d60e4716de363c61') in 0.029776 seconds
+  Import took 0.034536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008083 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/idle.asset
+  artifactKey: Guid(c09344178eedc974bad545f439ec363a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/ReferenceAssets/idle.asset using Guid(c09344178eedc974bad545f439ec363a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b9012f1ef0b6e2d60e4716de363c61') in 0.035076 seconds
+  Import took 0.040377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.387579 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet
+  artifactKey: Guid(cc68c5a91abfbf84589ccd2e29c08498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet using Guid(cc68c5a91abfbf84589ccd2e29c08498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8773a374d86aac289f19a41f2acfdb') in 0.010725 seconds
+  Import took 0.016113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.113640 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet.png
+  artifactKey: Guid(9b91b40e9906a514b807562f3aa8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet.png using Guid(9b91b40e9906a514b807562f3aa8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd4b6bd0ebe6edd3239d868cd351a46') in 0.023770 seconds
+  Import took 0.029622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_Material.mat
+  artifactKey: Guid(af523ed9213127b47bb2817f34b6c0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_Material.mat using Guid(af523ed9213127b47bb2817f34b6c0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea644e5f9f178388910e69e10e381c3') in 0.020125 seconds
+  Import took 0.027081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet.png
+  artifactKey: Guid(9b91b40e9906a514b807562f3aa8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet.png using Guid(9b91b40e9906a514b807562f3aa8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd4b6bd0ebe6edd3239d868cd351a46') in 0.014490 seconds
+  Import took 0.021267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_SkeletonData.asset
+  artifactKey: Guid(f48837e40a0a59f4f8b2247e649b9ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_SkeletonData.asset using Guid(f48837e40a0a59f4f8b2247e649b9ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7def5bd22e4b640380d4a2acfb363f41') in 0.035716 seconds
+  Import took 0.041985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_Atlas.asset
+  artifactKey: Guid(db9972b07fcc11e4a90b39b18e545a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_Atlas.asset using Guid(db9972b07fcc11e4a90b39b18e545a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3790f3b92e24ba8558f83e246cc6d344') in 0.011779 seconds
+  Import took 0.016840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.517485 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets
+  artifactKey: Guid(20eaa9a5d91c2bd4494a58957ee8104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets using Guid(20eaa9a5d91c2bd4494a58957ee8104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259067cee10ac0d26631848a47082e44') in 0.003569 seconds
+  Import took 0.008914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005938 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets
+  artifactKey: Guid(20eaa9a5d91c2bd4494a58957ee8104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets using Guid(20eaa9a5d91c2bd4494a58957ee8104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259067cee10ac0d26631848a47082e44') in 0.003281 seconds
+  Import took 0.008564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.363268 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets/attack.asset
+  artifactKey: Guid(99085edb4b0519f4baa79cab730ace66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets/attack.asset using Guid(99085edb4b0519f4baa79cab730ace66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64323e7f9b0c68afd152b07ce730e8ac') in 0.022472 seconds
+  Import took 0.028668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets/idle.asset
+  artifactKey: Guid(b79a14cca170051459227523faa7949c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/ReferenceAssets/idle.asset using Guid(b79a14cca170051459227523faa7949c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2cdbc00e5cb11cadc43e0ea51c8d369') in 0.015327 seconds
+  Import took 0.021263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.973532 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax
+  artifactKey: Guid(b8296bdf0e19b7c449c1f6127972f02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax using Guid(b8296bdf0e19b7c449c1f6127972f02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358776b8b2d3a093106c1fe3e77ca245') in 0.013815 seconds
+  Import took 0.021608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.010848 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie.png
+  artifactKey: Guid(cd6c43ad2a693b14f97b411f6532ad63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie.png using Guid(cd6c43ad2a693b14f97b411f6532ad63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e93f8d16a9590951ab9ff55bc6079f8') in 0.020210 seconds
+  Import took 0.025869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie_Atlas.asset
+  artifactKey: Guid(4553ca9098311bb4894284d906e1ede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie_Atlas.asset using Guid(4553ca9098311bb4894284d906e1ede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414e6af5326d51867ea8460c23337fc6') in 0.011591 seconds
+  Import took 0.017223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie_Material.mat
+  artifactKey: Guid(7e0a4e25ddd49e641b47ee79132661d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie_Material.mat using Guid(7e0a4e25ddd49e641b47ee79132661d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45d137e8f418ab9738845012e87180f') in 0.023406 seconds
+  Import took 0.028811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie_SkeletonData.asset
+  artifactKey: Guid(3776b45fde482294c8b6bb590f53ff3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ax_zombie_SkeletonData.asset using Guid(3776b45fde482294c8b6bb590f53ff3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e080d3e3c85c119ac16de470c205ca') in 0.052366 seconds
+  Import took 0.058245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.459179 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets
+  artifactKey: Guid(80491166832ac344dab9350df5656c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets using Guid(80491166832ac344dab9350df5656c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd163268c7bf374444cff2fb7e9f32e14') in 0.003469 seconds
+  Import took 0.008380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.244481 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/attack.asset
+  artifactKey: Guid(d49ea2a4b1c98bb43aad663d4e5f2f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/attack.asset using Guid(d49ea2a4b1c98bb43aad663d4e5f2f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15676df140a9b1927f601aad151e26bf') in 0.027833 seconds
+  Import took 0.032978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/walk_axe.asset
+  artifactKey: Guid(92a75343ab1c5e24eaa197c706af5f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/walk_axe.asset using Guid(92a75343ab1c5e24eaa197c706af5f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c65904b535cacd06fa67a1f5f9fde35') in 0.026353 seconds
+  Import took 0.031217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/slow_walk.asset
+  artifactKey: Guid(520a9427eb569994186c7ea4c2aa0c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/slow_walk.asset using Guid(520a9427eb569994186c7ea4c2aa0c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0f653a3852c52f3ee698ff24faa2d1') in 0.033190 seconds
+  Import took 0.038064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/walk.asset
+  artifactKey: Guid(eb67ed3ccc7e42448b22d2c65567cd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/walk.asset using Guid(eb67ed3ccc7e42448b22d2c65567cd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '152b8c626a0e2be1b10bf3b2ac80aee1') in 0.027538 seconds
+  Import took 0.032291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/death.asset
+  artifactKey: Guid(434b884f84248c040b983b2fb58aa90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/death.asset using Guid(434b884f84248c040b983b2fb58aa90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a78803f2212448b52e49b51cab94568') in 0.027573 seconds
+  Import took 0.032680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/slow_walk_axe.asset
+  artifactKey: Guid(fb578db8c2bbe3245bcfb75c54be896f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/slow_walk_axe.asset using Guid(fb578db8c2bbe3245bcfb75c54be896f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d7ab0e0aad3bb0d03f3825f97267b2') in 0.028757 seconds
+  Import took 0.033573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/death.asset
+  artifactKey: Guid(434b884f84248c040b983b2fb58aa90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/death.asset using Guid(434b884f84248c040b983b2fb58aa90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a78803f2212448b52e49b51cab94568') in 0.024738 seconds
+  Import took 0.029653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/take_axe.asset
+  artifactKey: Guid(5ba4f3e91109a8749a06bec8572193e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Ax/ReferenceAssets/take_axe.asset using Guid(5ba4f3e91109a8749a06bec8572193e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b4e601a4493842c0030dc4d6853a81') in 0.025459 seconds
+  Import took 0.030266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.372776 seconds.
+  path: Assets/Resources/Animat/Zombie/NewBehaviourScript.cs
+  artifactKey: Guid(50c21bc0e61ad4544a810e26c64e2fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/NewBehaviourScript.cs using Guid(50c21bc0e61ad4544a810e26c64e2fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3508c42555b83dfa47415f7e61e2b0e3') in 0.030846 seconds
+  Import took 0.036012 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008093 seconds.
+Registered in 0.009107 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.448 seconds
+- Completed reload, in  1.729 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.3 MB.
+System memory in use before: 121.7 MB.
+System memory in use after: 120.6 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2842.
-Total: 7.931100 ms (FindLiveObjects: 0.616300 ms CreateObjectMapping: 0.176500 ms MarkObjects: 4.003200 ms  DeleteObjects: 3.133100 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2844.
+Total: 4.987400 ms (FindLiveObjects: 0.498200 ms CreateObjectMapping: 0.145400 ms MarkObjects: 2.486000 ms  DeleteObjects: 1.856100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
+Received Import Request.
+  Time since last request: 17.409545 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored
+  artifactKey: Guid(8d547d5345ab28e42a32fe332021e750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored using Guid(8d547d5345ab28e42a32fe332021e750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79de4918894d871d6e446d153c09eec3') in 0.017388 seconds
+  Import took 0.023651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.358175 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie.png
+  artifactKey: Guid(e8a34aba7768e5347b4f32eb4cfe7010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie.png using Guid(e8a34aba7768e5347b4f32eb4cfe7010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde5ee64e0384e6ff0251a8b43ad48f6') in 0.058093 seconds
+  Import took 0.063263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie_SkeletonData.asset
+  artifactKey: Guid(c7cc21c7b3cf53948920b28493a5338c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie_SkeletonData.asset using Guid(c7cc21c7b3cf53948920b28493a5338c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1277d77811b1de7b7d14cf56171ff6') in 0.276327 seconds
+  Import took 0.285678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie_Material.mat
+  artifactKey: Guid(378330b6e64969442bc89794bd9ee28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie_Material.mat using Guid(378330b6e64969442bc89794bd9ee28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172038531b328ed83582503911a6b143') in 0.033890 seconds
+  Import took 0.038694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie_Atlas.asset
+  artifactKey: Guid(4c3dbfc93e762a044b5c80aeabd7d85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie_Atlas.asset using Guid(4c3dbfc93e762a044b5c80aeabd7d85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f0b0bc8bac0b8174190a1bf839e357') in 0.010053 seconds
+  Import took 0.014469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.512252 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets
+  artifactKey: Guid(b776a762fd3399241bc10637da8bda59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets using Guid(b776a762fd3399241bc10637da8bda59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64c71298464f310eb12e4d66297b93c') in 0.003768 seconds
+  Import took 0.009334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008621 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets
+  artifactKey: Guid(b776a762fd3399241bc10637da8bda59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets using Guid(b776a762fd3399241bc10637da8bda59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64c71298464f310eb12e4d66297b93c') in 0.003712 seconds
+  Import took 0.009394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.091349 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/death.asset
+  artifactKey: Guid(814fc7f3b0e5a034c9f092506163c3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/death.asset using Guid(814fc7f3b0e5a034c9f092506163c3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acff903eb0e01ac43df5af07b0233af7') in 0.037168 seconds
+  Import took 0.042454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/slow_walk.asset
+  artifactKey: Guid(7c8e9695d85c7104ab1e5efc4a889d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/slow_walk.asset using Guid(7c8e9695d85c7104ab1e5efc4a889d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea97130cec33bf4d0044f0fe98862fa') in 0.034305 seconds
+  Import took 0.039163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/walk.asset
+  artifactKey: Guid(0eccd9ba3f12e984da36a9329577f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/walk.asset using Guid(0eccd9ba3f12e984da36a9329577f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78dd638b1cdf7211a9eecfa86ec0e8b1') in 0.033963 seconds
+  Import took 0.040025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/slow_walk.asset
+  artifactKey: Guid(7c8e9695d85c7104ab1e5efc4a889d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Armored/ReferenceAssets/slow_walk.asset using Guid(7c8e9695d85c7104ab1e5efc4a889d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea97130cec33bf4d0044f0fe98862fa') in 0.033693 seconds
+  Import took 0.039261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.464416 seconds.
+  path: Assets/Resources/Animat/Herous/robin/robin_hood.png
+  artifactKey: Guid(c729f73fe4e932448883e036e3d40bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/robin_hood.png using Guid(c729f73fe4e932448883e036e3d40bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563c0428c4164439aa1173ee4c3829ac') in 0.020396 seconds
+  Import took 0.026245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.634297 seconds.
+  path: Assets/Resources/Animat/Herous/robin/robin_hood.png
+  artifactKey: Guid(c729f73fe4e932448883e036e3d40bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/robin_hood.png using Guid(c729f73fe4e932448883e036e3d40bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8a623a8c5ee0a9197d51577df6b14f') in 0.019891 seconds
+  Import took 0.026074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Resources/Animat/Herous/robin/robin_hood_SkeletonData.asset
+  artifactKey: Guid(c452617aa9ac1964ea3000d7c1c38f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/robin_hood_SkeletonData.asset using Guid(c452617aa9ac1964ea3000d7c1c38f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70032f2db44d426a7bef26807bd6779f') in 0.049514 seconds
+  Import took 0.054125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Resources/Animat/Herous/robin/robin_hood_Atlas.asset
+  artifactKey: Guid(16ed92bb9e171ab4c965419878292cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/robin_hood_Atlas.asset using Guid(16ed92bb9e171ab4c965419878292cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7edf4a4a0e7fe1b700c65a773cda0b4') in 0.009979 seconds
+  Import took 0.014394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Resources/Animat/Herous/robin/robin_hood_Material.mat
+  artifactKey: Guid(bc5b681915e031c479e2cbcb56218ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/robin_hood_Material.mat using Guid(bc5b681915e031c479e2cbcb56218ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0071754c2c40865a855581b5630a41') in 0.024813 seconds
+  Import took 0.029324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Resources/Animat/Herous/robin/robin_hood.png
+  artifactKey: Guid(c729f73fe4e932448883e036e3d40bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/robin_hood.png using Guid(c729f73fe4e932448883e036e3d40bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8a623a8c5ee0a9197d51577df6b14f') in 0.016882 seconds
+  Import took 0.021485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.193250 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets
+  artifactKey: Guid(a7c6ff7200f612b4c9e95893cd3846a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets using Guid(a7c6ff7200f612b4c9e95893cd3846a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98248113da929c92dde508e6c0f02d3e') in 0.004488 seconds
+  Import took 0.010051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009874 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets
+  artifactKey: Guid(a7c6ff7200f612b4c9e95893cd3846a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets using Guid(a7c6ff7200f612b4c9e95893cd3846a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98248113da929c92dde508e6c0f02d3e') in 0.003802 seconds
+  Import took 0.010673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.734319 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/attack-1.asset
+  artifactKey: Guid(87d30699f8da2404c8e1c7d6e5222592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/attack-1.asset using Guid(87d30699f8da2404c8e1c7d6e5222592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '120aa8a1ed948147f274747c6cbcd6cb') in 0.037292 seconds
+  Import took 0.042341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/walk2.asset
+  artifactKey: Guid(a8823c511a16da146adb6c8d52dcae37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/walk2.asset using Guid(a8823c511a16da146adb6c8d52dcae37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6de54113741f5ae8561ea9f3604c579') in 0.041855 seconds
+  Import took 0.047151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/attack.asset
+  artifactKey: Guid(127ed9ca890c6de4291489649c2458ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/attack.asset using Guid(127ed9ca890c6de4291489649c2458ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabd95f503a85f226d386a89006f0d08') in 0.038513 seconds
+  Import took 0.044643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/attack-2.asset
+  artifactKey: Guid(7c59799cadf66f44bbb63b95e6cbd5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/attack-2.asset using Guid(7c59799cadf66f44bbb63b95e6cbd5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afce2fa8e646a9585be2f4b2c5b46da8') in 0.045417 seconds
+  Import took 0.050096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/r-fun.asset
+  artifactKey: Guid(f1767f814d4a41d4f991827481840ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/r-fun.asset using Guid(f1767f814d4a41d4f991827481840ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50377471720758a55d4454ded47d02dc') in 0.035129 seconds
+  Import took 0.040287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/walk.asset
+  artifactKey: Guid(9cb17a336281b954b96b7c89722c8360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/walk.asset using Guid(9cb17a336281b954b96b7c89722c8360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944611cd29e8b2fd33d701c4a395e2b7') in 0.042542 seconds
+  Import took 0.047196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/r-sad.asset
+  artifactKey: Guid(863f13ba89dbd0c48911ed76c80c9c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/r-sad.asset using Guid(863f13ba89dbd0c48911ed76c80c9c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03caadc57aed37970325f34b8f77bcd2') in 0.039152 seconds
+  Import took 0.043846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/idle.asset
+  artifactKey: Guid(be216159a555e3f428f24e419f969812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/idle.asset using Guid(be216159a555e3f428f24e419f969812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bd2b411a3f6e34076bb1cd01eafbda4') in 0.041516 seconds
+  Import took 0.046108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/jump.asset
+  artifactKey: Guid(9de94e969b2bc71488bb87a589f3d63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/jump.asset using Guid(9de94e969b2bc71488bb87a589f3d63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e51ca91d49bee3dc1858ff768614d08') in 0.036178 seconds
+  Import took 0.040701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Resources/Animat/Herous/robin/ReferenceAssets/death.asset
+  artifactKey: Guid(83f225165f75c0948924d475b7204f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/robin/ReferenceAssets/death.asset using Guid(83f225165f75c0948924d475b7204f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5460d27e73398b665760fac2a2e21369') in 0.038136 seconds
+  Import took 0.043151 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006777 seconds.
+Registered in 0.007873 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.865 seconds
+- Completed reload, in  1.719 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.3 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2846.
-Total: 5.616300 ms (FindLiveObjects: 0.682900 ms CreateObjectMapping: 0.145600 ms MarkObjects: 2.627600 ms  DeleteObjects: 2.158700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008108 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.185 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.3 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2850.
-Total: 6.406800 ms (FindLiveObjects: 0.566900 ms CreateObjectMapping: 0.249400 ms MarkObjects: 3.284700 ms  DeleteObjects: 2.303800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007066 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.888 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.2 MB.
+System memory in use before: 121.8 MB.
+System memory in use after: 120.7 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2854.
-Total: 5.191200 ms (FindLiveObjects: 0.496000 ms CreateObjectMapping: 0.126900 ms MarkObjects: 2.549500 ms  DeleteObjects: 2.017200 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2850.
+Total: 5.168300 ms (FindLiveObjects: 0.433900 ms CreateObjectMapping: 0.132700 ms MarkObjects: 2.744100 ms  DeleteObjects: 1.856300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006907 seconds.
+Registered in 0.007587 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.821 seconds
+- Completed reload, in  1.804 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 120.3 MB.
+System memory in use before: 121.8 MB.
+System memory in use after: 120.6 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2858.
-Total: 5.705200 ms (FindLiveObjects: 0.684600 ms CreateObjectMapping: 0.323500 ms MarkObjects: 2.756400 ms  DeleteObjects: 1.938500 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2854.
+Total: 5.301500 ms (FindLiveObjects: 0.546400 ms CreateObjectMapping: 0.139500 ms MarkObjects: 2.681600 ms  DeleteObjects: 1.932400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 119.139595 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6c74a584fce08df42e9d22614ac568') in 0.028674 seconds
+  Import took 0.034164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.826634 seconds.
+  path: Assets/Resources/Scripts/Controller/Player/PlayerController.cs
+  artifactKey: Guid(a85269a84c20d774f90dac1f4848b8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Scripts/Controller/Player/PlayerController.cs using Guid(a85269a84c20d774f90dac1f4848b8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fcc09cc2e068c55d87d57999e51f5b') in 0.010180 seconds
+  Import took 0.015809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034333 seconds.
+  path: Assets/Resources/Scripts/Controller/Player/PlayerController.cs
+  artifactKey: Guid(a85269a84c20d774f90dac1f4848b8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Scripts/Controller/Player/PlayerController.cs using Guid(a85269a84c20d774f90dac1f4848b8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fcc09cc2e068c55d87d57999e51f5b') in 0.004362 seconds
+  Import took 0.009448 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006945 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.630 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.8 MB.
+System memory in use after: 120.7 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2858.
+Total: 6.444600 ms (FindLiveObjects: 0.676500 ms CreateObjectMapping: 0.308100 ms MarkObjects: 2.874400 ms  DeleteObjects: 2.583400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.725 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.9 MB.
+System memory in use after: 120.7 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2862.
+Total: 5.400400 ms (FindLiveObjects: 0.486100 ms CreateObjectMapping: 0.131000 ms MarkObjects: 2.679500 ms  DeleteObjects: 2.101700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007620 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.861 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.8 MB.
+System memory in use after: 120.7 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2866.
+Total: 7.379900 ms (FindLiveObjects: 0.731800 ms CreateObjectMapping: 0.288700 ms MarkObjects: 3.719300 ms  DeleteObjects: 2.637900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 508.070766 seconds.
+  path: Assets/Resources/Animat/Herous/Robin
+  artifactKey: Guid(fdf414c329e3ed547b6a9de3749672f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Herous/Robin using Guid(fdf414c329e3ed547b6a9de3749672f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f9f6694fa472423c06c5eb9b24467a') in 0.015787 seconds
+  Import took 0.021133 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.771 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.9 MB.
+System memory in use after: 120.7 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2870.
+Total: 5.027500 ms (FindLiveObjects: 0.427300 ms CreateObjectMapping: 0.124600 ms MarkObjects: 2.515500 ms  DeleteObjects: 1.958700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.832 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.9 MB.
+System memory in use after: 120.7 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2874.
+Total: 5.122900 ms (FindLiveObjects: 0.499400 ms CreateObjectMapping: 0.149900 ms MarkObjects: 2.501600 ms  DeleteObjects: 1.970200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007927 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.756 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.9 MB.
+System memory in use after: 120.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2878.
+Total: 5.035100 ms (FindLiveObjects: 0.426100 ms CreateObjectMapping: 0.125000 ms MarkObjects: 2.527100 ms  DeleteObjects: 1.955200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007822 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.843 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.0 MB.
+System memory in use after: 120.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2882.
+Total: 5.214700 ms (FindLiveObjects: 0.447900 ms CreateObjectMapping: 0.137100 ms MarkObjects: 2.646400 ms  DeleteObjects: 1.981800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007314 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.800 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.0 MB.
+System memory in use after: 120.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2886.
+Total: 5.198400 ms (FindLiveObjects: 0.459300 ms CreateObjectMapping: 0.132300 ms MarkObjects: 2.574000 ms  DeleteObjects: 2.031000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.825 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.9 MB.
+System memory in use after: 120.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2890.
+Total: 5.304300 ms (FindLiveObjects: 0.439100 ms CreateObjectMapping: 0.135700 ms MarkObjects: 2.561700 ms  DeleteObjects: 2.166800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006537 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.811 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.9 MB.
+System memory in use after: 120.7 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2894.
+Total: 5.160400 ms (FindLiveObjects: 0.461100 ms CreateObjectMapping: 0.134100 ms MarkObjects: 2.628100 ms  DeleteObjects: 1.936000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007010 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.898 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.0 MB.
+System memory in use after: 120.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2898.
+Total: 5.553800 ms (FindLiveObjects: 0.607000 ms CreateObjectMapping: 0.135500 ms MarkObjects: 2.841800 ms  DeleteObjects: 1.967700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 523.539447 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple
+  artifactKey: Guid(d8ca50c515affe745870a8c4e477a23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple using Guid(d8ca50c515affe745870a8c4e477a23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d48667b569e97562a0fe67b4835f2e4') in 0.015193 seconds
+  Import took 0.021265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.913140 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie.png
+  artifactKey: Guid(3d3d881bfe2a59846bb409058126c7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie.png using Guid(3d3d881bfe2a59846bb409058126c7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c123182d2bb39cf42bae5a571a906c') in 0.057355 seconds
+  Import took 0.062786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie_Atlas.asset
+  artifactKey: Guid(408c4445d4850ff48b603aa894acb955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie_Atlas.asset using Guid(408c4445d4850ff48b603aa894acb955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7e482b7d8909eefc99ce1dc123508b') in 0.011709 seconds
+  Import took 0.016372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie_Material.mat
+  artifactKey: Guid(3fcbc609b43f8a4458422d8041d340c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie_Material.mat using Guid(3fcbc609b43f8a4458422d8041d340c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36c1ed4ddb1e01adbf15b462ce798d1') in 0.055310 seconds
+  Import took 0.061048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie_SkeletonData.asset
+  artifactKey: Guid(30593a78272252f40a77481800db8a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/simple_zombie_SkeletonData.asset using Guid(30593a78272252f40a77481800db8a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42847ad8ef6f8706091c82842b54bc18') in 0.257145 seconds
+  Import took 0.266283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.850662 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets
+  artifactKey: Guid(c2d1dacf71ba7c846835f5e216eb3b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets using Guid(c2d1dacf71ba7c846835f5e216eb3b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb98622b6224570ca95127c624a3ab0e') in 0.004459 seconds
+  Import took 0.009286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012291 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets
+  artifactKey: Guid(c2d1dacf71ba7c846835f5e216eb3b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets using Guid(c2d1dacf71ba7c846835f5e216eb3b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb98622b6224570ca95127c624a3ab0e') in 0.003986 seconds
+  Import took 0.009492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.642011 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/death.asset
+  artifactKey: Guid(d36fa884c2a0c254e92e0348441e58b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/death.asset using Guid(d36fa884c2a0c254e92e0348441e58b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f24b0afe3cc5a9317914bca5b6b974d') in 0.033856 seconds
+  Import took 0.039225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/slow_walk.asset
+  artifactKey: Guid(c85b40ad21741184c99b731476ef68e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/slow_walk.asset using Guid(c85b40ad21741184c99b731476ef68e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd855065ed0668d6f44509698781f3c') in 0.034502 seconds
+  Import took 0.039594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/walk.asset
+  artifactKey: Guid(98ab8daad15ab0d4ca61c3e2ef2b6323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/walk.asset using Guid(98ab8daad15ab0d4ca61c3e2ef2b6323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92be20dccc44dcb47fdbb58d0e67be3') in 0.033802 seconds
+  Import took 0.040022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008236 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/walk.asset
+  artifactKey: Guid(98ab8daad15ab0d4ca61c3e2ef2b6323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Simple/ReferenceAssets/walk.asset using Guid(98ab8daad15ab0d4ca61c3e2ef2b6323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92be20dccc44dcb47fdbb58d0e67be3') in 0.028320 seconds
+  Import took 0.033855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.859263 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer
+  artifactKey: Guid(06df76734426e51498e0fc656b71d9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer using Guid(06df76734426e51498e0fc656b71d9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f18cbe90a3f1a2a1354bc4c490d1b30') in 0.011727 seconds
+  Import took 0.016954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.908401 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer.png
+  artifactKey: Guid(665ba8edd47895c43b5fb76bb1e219b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer.png using Guid(665ba8edd47895c43b5fb76bb1e219b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53cf3d528045ebd9907e71d863d72a18') in 0.024608 seconds
+  Import took 0.030337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer_Material.mat
+  artifactKey: Guid(82338bd73acae934b892b77427d23edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer_Material.mat using Guid(82338bd73acae934b892b77427d23edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e5a61a8fc5737d5569d4cafedf5f4f') in 0.028921 seconds
+  Import took 0.033940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer.png
+  artifactKey: Guid(665ba8edd47895c43b5fb76bb1e219b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer.png using Guid(665ba8edd47895c43b5fb76bb1e219b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53cf3d528045ebd9907e71d863d72a18') in 0.025240 seconds
+  Import took 0.029976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer_Atlas.asset
+  artifactKey: Guid(e99f969e51634b141ad828277821df31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer_Atlas.asset using Guid(e99f969e51634b141ad828277821df31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ea7696ba48b059ebd995d8ce805d41') in 0.012139 seconds
+  Import took 0.017557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer_SkeletonData.asset
+  artifactKey: Guid(98ed320a3b4395a4f9c94fddf704112b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/zombie_archer_SkeletonData.asset using Guid(98ed320a3b4395a4f9c94fddf704112b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4bda30107ed2991503020397d39ecf') in 0.038726 seconds
+  Import took 0.044644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.320514 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets
+  artifactKey: Guid(3bed8f1d3afd40740855f460f104c2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets using Guid(3bed8f1d3afd40740855f460f104c2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30106b43319b620c0a32bf33336aef8') in 0.004600 seconds
+  Import took 0.012637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011300 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets
+  artifactKey: Guid(3bed8f1d3afd40740855f460f104c2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets using Guid(3bed8f1d3afd40740855f460f104c2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30106b43319b620c0a32bf33336aef8') in 0.004711 seconds
+  Import took 0.010576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.670307 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/attack.asset
+  artifactKey: Guid(7135b5bbdcf89514a902b719209b51f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/attack.asset using Guid(7135b5bbdcf89514a902b719209b51f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfcd8ffa450bf43879de21f4040604f') in 0.033580 seconds
+  Import took 0.039715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/walk2.asset
+  artifactKey: Guid(dcc4401acea3eac4884bf9c3057bc9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/walk2.asset using Guid(dcc4401acea3eac4884bf9c3057bc9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23c77ce1cc3f3a2404a8bd5ad9b516e') in 0.033780 seconds
+  Import took 0.038911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/death.asset
+  artifactKey: Guid(8a96f796ea25bbd4e8dde8dfad69ae05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/death.asset using Guid(8a96f796ea25bbd4e8dde8dfad69ae05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d4f1dcb78c34a0be557506b4e3b189') in 0.034803 seconds
+  Import took 0.040406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/walk.asset
+  artifactKey: Guid(c03fed1fb7b41be43b8fab31af2094e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/walk.asset using Guid(c03fed1fb7b41be43b8fab31af2094e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4260f5a629e194ddd0d977c26556a2fe') in 0.033515 seconds
+  Import took 0.038691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/death.asset
+  artifactKey: Guid(8a96f796ea25bbd4e8dde8dfad69ae05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/death.asset using Guid(8a96f796ea25bbd4e8dde8dfad69ae05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d4f1dcb78c34a0be557506b4e3b189') in 0.028873 seconds
+  Import took 0.033858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/walk.asset
+  artifactKey: Guid(c03fed1fb7b41be43b8fab31af2094e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animat/Zombie/Zombie_Archer/ReferenceAssets/walk.asset using Guid(c03fed1fb7b41be43b8fab31af2094e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4260f5a629e194ddd0d977c26556a2fe') in 0.028384 seconds
+  Import took 0.033252 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

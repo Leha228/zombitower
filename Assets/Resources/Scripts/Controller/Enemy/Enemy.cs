@@ -37,10 +37,9 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        //if (!singleton.isActiveAndEnabled) DestroyEnemy();
         if (shootBool && Mathf.Round(transform.position.x) == Mathf.Round(shootPointLimit.transform.position.x)) {
             shootBool = false;
-            Bow.singleton.bowEvent.Invoke();
+            PlayerController.singleton.Attack();
         }
 
         transform.position = 

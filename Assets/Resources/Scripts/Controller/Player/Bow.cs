@@ -22,6 +22,6 @@ public class Bow : MonoBehaviour
     private void CreateArrow() {
         launchForce = Vector2.Distance(transform.position, shootPointLimit.transform.position); 
         GameObject newArrow = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
-        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (launchForce - 3f);
+        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (launchForce - 4f);
     }
 }
