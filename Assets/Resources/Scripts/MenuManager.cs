@@ -4,8 +4,12 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager singleton { get; private set; }
     [SerializeField] private GameObject[] levelList;
     [SerializeField] private Sprite[] spriteList;
+    [SerializeField] private GameObject[] menuList;
+
+    private void Awake() { singleton = this; }
 
     private void Start() {
         //PlayerPrefs.DeleteAll();
@@ -32,4 +36,15 @@ public class MenuManager : MonoBehaviour
         DataHolder.enemyList = levelList[level - 1].GetComponent<LevelModel>().enemyList;
         SceneManager.LoadScene("Game");
     }
+
+    public void Open(string name) {
+        foreach (var item in menuList) {    
+            if (item.name == name)
+                item.SetActive(true);
+            else   
+                item.SetActive(false);
+        }
+    }
+
+    public void OpenMenu() => SceneManager.LoadScene("Menu");
 }
