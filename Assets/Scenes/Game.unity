@@ -2669,11 +2669,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonAnimation: {fileID: 1517236481}
-  idle: {fileID: 11400000, guid: a99d4963b51a97444933f48a1f4ffa12, type: 2}
-  aiming: {fileID: 11400000, guid: 2abb7e12b6ba5ac49816e4f5edab31a6, type: 2}
-  attack: {fileID: 11400000, guid: 35e544e20bc8f864e983f58be07f2cf1, type: 2}
-  open: {fileID: 11400000, guid: cba044ea5d360d24687ecbb7895f269a, type: 2}
-  close: {fileID: 11400000, guid: 2a8b384f414a109499b537a641f7dbc1, type: 2}
+  idle:
+  - {fileID: 11400000, guid: a99d4963b51a97444933f48a1f4ffa12, type: 2}
+  - {fileID: 11400000, guid: aa4e8b19f6cf5994fb734554716186c6, type: 2}
+  - {fileID: 11400000, guid: c09344178eedc974bad545f439ec363a, type: 2}
+  aiming:
+  - {fileID: 11400000, guid: 2abb7e12b6ba5ac49816e4f5edab31a6, type: 2}
+  - {fileID: 11400000, guid: d6f9b96955f57264ea6d16dfdd4c65bb, type: 2}
+  - {fileID: 11400000, guid: c09344178eedc974bad545f439ec363a, type: 2}
+  attack:
+  - {fileID: 11400000, guid: 35e544e20bc8f864e983f58be07f2cf1, type: 2}
+  - {fileID: 11400000, guid: c03c80d712465244192df09f248da725, type: 2}
+  - {fileID: 11400000, guid: 2ac6c068a54ce6e43912c68462d2dee8, type: 2}
+  open:
+  - {fileID: 11400000, guid: cba044ea5d360d24687ecbb7895f269a, type: 2}
+  - {fileID: 11400000, guid: 8d8fbd52105f85a4fb3b608ef1f8c0ea, type: 2}
+  - {fileID: 11400000, guid: b74b67884da9e5f4b987ea5c3e8c4252, type: 2}
+  close:
+  - {fileID: 11400000, guid: 2a8b384f414a109499b537a641f7dbc1, type: 2}
+  - {fileID: 11400000, guid: 0fb4fb387e1cec747b8aea634a6e86a1, type: 2}
+  - {fileID: 11400000, guid: e342e0500ffdf5045a8405bb4e3c6b35, type: 2}
+  dataAsset:
+  - {fileID: 11400000, guid: 4781fbe3c1bafa24689c76ab8f11ca69, type: 2}
+  - {fileID: 11400000, guid: 13f4e7e60fbb7aa48a878989f585076b, type: 2}
+  - {fileID: 11400000, guid: 94bf4f085ff89fa49b5b969031ceaab5, type: 2}
   live: 50
 --- !u!61 &1517236486
 BoxCollider2D:

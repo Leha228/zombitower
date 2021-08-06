@@ -14,8 +14,8 @@ public class EventManager : MonoBehaviour
 
     private void Awake() { singleton = this; }
 
-    private void OpenGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.open, false); 
-    private void CloseGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.close, false); 
+    private void OpenGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.open[UserModel.singleton.GetActiveTower()], false); 
+    private void CloseGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.close[UserModel.singleton.GetActiveTower()], false); 
     public int GetProgress() => _progress;
     public void YouDieContinueOpen() => youDieContinue.SetActive(true);
     public void YouDieContinueClose() => youDieContinue.SetActive(false);

@@ -36,9 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resources\Scripts\Model\UserModel.cs" />
      <Compile Include="Assets\Resources\Scripts\Model\ShopModel.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Enemy\Enemy.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Enemy\RespawnEnemy.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\UserController.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Player\PlayerController.cs" />
      <Compile Include="Assets\Resources\Scripts\DataHolder.cs" />
      <Compile Include="Assets\Resources\Scripts\MenuManager.cs" />
@@ -46,6 +48,7 @@
      <Compile Include="Assets\Resources\Scripts\Controller\KnightController.cs" />
      <Compile Include="Assets\Resources\Scripts\EventManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Model\KnightModel.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\TowerController.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\ShopController.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Player\Arrow.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Enemy\EnemyShoot.cs" />
@@ -54,8 +57,8 @@
      <Compile Include="Assets\Resources\Scripts\MainMenuManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Model\LevelModel.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\ShootController.cs" />
-     <Compile Include="Assets\Resources\Scripts\Model\UserModel.cs" />
-     <Compile Include="Assets\Resources\Scripts\Controller\UserController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Model\ForgeModel.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\ForgeController.cs" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\Resources\Animat\Herous\Robin\robin_hood.atlas.txt" />
      <None Include="Assets\Resources\Animat\Tower\Tower_Rome\tower2.atlas.txt" />

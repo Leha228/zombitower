@@ -38,7 +38,7 @@ public class ShootController : MonoBehaviour
             points[i].SetActive(false); 
 
         _currentState = "attack";
-        TowerModel.singleton.SetAnimation(TowerModel.singleton.attack, false);
+        TowerModel.singleton.SetAnimation(TowerModel.singleton.attack[UserModel.singleton.GetActiveTower()], false);
         Shoot();
     }
     
@@ -50,7 +50,7 @@ public class ShootController : MonoBehaviour
             if (_currentState != "aim")
             {
                 _currentState = "aim";
-                TowerModel.singleton.SetAnimation(TowerModel.singleton.aiming, false);
+                TowerModel.singleton.SetAnimation(TowerModel.singleton.aiming[UserModel.singleton.GetActiveTower()], false);
             }
             
             launchForce += 4 * Time.deltaTime;
@@ -60,7 +60,7 @@ public class ShootController : MonoBehaviour
             if (_currentState != "idle")
             {
                 _currentState = "idle";
-                TowerModel.singleton.SetAnimation(TowerModel.singleton.idle, true);
+                TowerModel.singleton.SetAnimation(TowerModel.singleton.idle[UserModel.singleton.GetActiveTower()], true);
             }
     }
 

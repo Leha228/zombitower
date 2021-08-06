@@ -10,7 +10,12 @@ public class TowerModel : MonoBehaviour
 
     [SerializeField] public SkeletonAnimation skeletonAnimation;
     [SerializeField] public SkeletonData skeletonData;
-    [SerializeField] public AnimationReferenceAsset idle, aiming, attack, open, close;
+    [SerializeField] public AnimationReferenceAsset[] idle;
+    [SerializeField] public AnimationReferenceAsset[] aiming;
+    [SerializeField] public AnimationReferenceAsset[] attack;
+    [SerializeField] public AnimationReferenceAsset[] open;
+    [SerializeField] public AnimationReferenceAsset[] close;
+    [SerializeField] public SkeletonDataAsset[] dataAsset;
     [SerializeField] public int live;
     private List<string> _collisions;
     private bool _coroutine = false;
@@ -20,6 +25,11 @@ public class TowerModel : MonoBehaviour
         _collisions = new List<string> {
             "zombie_great(Clone)"
         };
+    }
+
+    private void Start() {
+        skeletonAnimation.skeletonDataAsset = dataAsset[UserModel.singleton.GetActiveTower()];
+        skeletonAnimation.Initialize(true);
     }
 
     public void SetAnimation(AnimationReferenceAsset animation, bool loop) 
