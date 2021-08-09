@@ -2,11 +2,18 @@ using UnityEngine;
 
 public class UserController : MonoBehaviour
 {
+    public static UserController singleton { get; private set;}
+    private void Awake() { singleton = this; }
+
     private void Start() {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         if (!PlayerPrefs.HasKey(UserModel.DIAMOND))
             Init();
 
+        UpdateCashList();
+    }
+
+    public void UpdateCashList() {
         foreach (var item in UserModel.singleton.cashList)
             item.text = PlayerPrefs.GetInt(item.name, 0).ToString();
     }
@@ -18,5 +25,7 @@ public class UserController : MonoBehaviour
         PlayerPrefs.SetInt(UserModel.RESOURCE_WOOD, 0);
         PlayerPrefs.SetInt(UserModel.RESOURCE_IRON, 0);
         PlayerPrefs.SetInt(UserModel.RESOURCE_CHARTER, 0);
+        UserModel.singleton.towers.Add(0);
+        SaveData.singleton.SaveToFile();
     }
 }

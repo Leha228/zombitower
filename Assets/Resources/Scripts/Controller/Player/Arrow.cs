@@ -13,7 +13,10 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        _collisions = new List<string> {"zombie_great", "samurai"};
+        _collisions = new List<string> {
+            "zombie_great(Clone)", 
+            "zombie_simple(Clone)"
+        };
     }
 
     private void FixedUpdate()
@@ -23,6 +26,10 @@ public class Arrow : MonoBehaviour
             var dir = rb.velocity;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
+        } else 
+        {
+            transform.position = 
+                new Vector2(transform.position.x - Enemy.singleton.speed * Time.deltaTime, transform.position.y);
         }
     }
 
@@ -33,6 +40,10 @@ public class Arrow : MonoBehaviour
         _hasHit = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
+        //arrow.GetComponentInChildren<TrailRenderer>().enabled = false;
     }
 
+    private void OnCollisionExit2D(Collision2D collision) {
+        if (_collisions.Contains(collision.collider.name)) Destroy(arrow);
+    }
 }

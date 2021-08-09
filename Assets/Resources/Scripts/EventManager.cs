@@ -25,7 +25,7 @@ public class EventManager : MonoBehaviour
     public void CreateMob() {
         OpenGate();
 
-        GameObject enemyCopy = Instantiate(MobModel.singleton.knight);
+        GameObject enemyCopy = Instantiate(TowerModel.singleton.mobs[UserModel.singleton.GetActiveTower()]);
         enemyCopy.transform.position = MobModel.singleton.transform.position;
 
         Invoke("CloseGate", 2f);

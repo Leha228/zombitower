@@ -15,6 +15,9 @@ public class TowerModel : MonoBehaviour
     [SerializeField] public AnimationReferenceAsset[] attack;
     [SerializeField] public AnimationReferenceAsset[] open;
     [SerializeField] public AnimationReferenceAsset[] close;
+    [SerializeField] public GameObject[] shells;
+    [SerializeField] public GameObject[] mobs;
+    [SerializeField] public int[] damage;
     [SerializeField] public SkeletonDataAsset[] dataAsset;
     [SerializeField] public int live;
     private List<string> _collisions;
@@ -23,7 +26,8 @@ public class TowerModel : MonoBehaviour
     private void Awake() {
         singleton = this;
         _collisions = new List<string> {
-            "zombie_great(Clone)"
+            "zombie_great(Clone)", 
+            "zombie_simple(Clone)"
         };
     }
 

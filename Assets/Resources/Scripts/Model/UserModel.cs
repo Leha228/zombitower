@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class UserModel : MonoBehaviour
     [SerializeField] public Image[] resourceList;
     [SerializeField] public int diamond;
     [SerializeField] public int gold;
+    [SerializeField] public List<int> towers;
 
     public const string DIAMOND = "diamond";
     public const string GOLD = "gold";
@@ -16,6 +18,8 @@ public class UserModel : MonoBehaviour
     public const string RESOURCE_WOOD = "resource_wood";
     public const string RESOURCE_IRON = "resource_iron";
     public const string RESOURCE_CHARTER = "resource_charter";
+    public const string ACTIVE = "Active";
+    public const string SELECT = "Select";
 
 
     private void Awake() {
@@ -28,4 +32,5 @@ public class UserModel : MonoBehaviour
     public int GetResourceWood() => PlayerPrefs.GetInt(RESOURCE_WOOD, 0);
     public int GetResourceIron() => PlayerPrefs.GetInt(RESOURCE_IRON, 0);
     public int GetResourceCharter() => PlayerPrefs.GetInt(RESOURCE_CHARTER, 0);
+
 }

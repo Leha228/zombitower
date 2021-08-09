@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopModel : MonoBehaviour
 {
@@ -6,6 +7,10 @@ public class ShopModel : MonoBehaviour
     
     [SerializeField] public GameObject shop;
     [SerializeField] public GameObject[] tabs;
+    [SerializeField] public Button[] towers;
+    //[SerializeField] public GameObject[] herous;
+    //[SerializeField] public GameObject[] shells;
+    //[SerializeField] public GameObject[] vip;
 
     private void Awake() { singleton = this; }
 }

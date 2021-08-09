@@ -6,11 +6,9 @@ public class ShootController : MonoBehaviour
 {
     public static ShootController singleton { get; private set; }
 
-    public GameObject peak;
     public GameObject point;
     GameObject[] points;
     public float launchForce = 4f;
-    public int damage;
     public int numberOfPoints = 5;
     public float spaceBetweenPoint;
 
@@ -82,7 +80,11 @@ public class ShootController : MonoBehaviour
     }
 
     private void Shoot() {
-        GameObject newArrow = Instantiate(peak, transform.position, transform.rotation);
+        GameObject newArrow = Instantiate(
+                TowerModel.singleton.shells[UserModel.singleton.GetActiveTower()], 
+                transform.position, 
+                transform.rotation
+        );
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
     }
 

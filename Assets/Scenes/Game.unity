@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d399399d3df524fb19acaa8a389d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knight: {fileID: 6050783393956785201, guid: 570d2e40c1e281f43ae4e462b32e61f5, type: 3}
+  collisions: []
 --- !u!4 &1515367755
 Transform:
   m_ObjectHideFlags: 0
@@ -2689,6 +2689,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2a8b384f414a109499b537a641f7dbc1, type: 2}
   - {fileID: 11400000, guid: 0fb4fb387e1cec747b8aea634a6e86a1, type: 2}
   - {fileID: 11400000, guid: e342e0500ffdf5045a8405bb4e3c6b35, type: 2}
+  shells:
+  - {fileID: 4752561636318475769, guid: 63c80512177cd8a44abcb10e4bfaf4ab, type: 3}
+  - {fileID: 4752561636318475769, guid: 63c80512177cd8a44abcb10e4bfaf4ab, type: 3}
+  - {fileID: 2262721734951671754, guid: 64c2a31cc88b287498f4a209786dc09f, type: 3}
+  mobs:
+  - {fileID: 6050783393956785201, guid: 570d2e40c1e281f43ae4e462b32e61f5, type: 3}
+  - {fileID: 6050783393956785201, guid: 570d2e40c1e281f43ae4e462b32e61f5, type: 3}
+  - {fileID: 6050783393956785201, guid: 570d2e40c1e281f43ae4e462b32e61f5, type: 3}
+  damage: 0a0000000a0000000a000000
   dataAsset:
   - {fileID: 11400000, guid: 4781fbe3c1bafa24689c76ab8f11ca69, type: 2}
   - {fileID: 11400000, guid: 13f4e7e60fbb7aa48a878989f585076b, type: 2}
@@ -2804,10 +2813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25397d4cce400bd45a8f9612e544f4f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  peak: {fileID: 4752561636318475769, guid: 63c80512177cd8a44abcb10e4bfaf4ab, type: 3}
   point: {fileID: 6583632184684467821, guid: c39513798f026784ba42f722ca4d98e3, type: 3}
   launchForce: 4
-  damage: 10
   numberOfPoints: 10
   spaceBetweenPoint: 0.1
 --- !u!1 &1628764125

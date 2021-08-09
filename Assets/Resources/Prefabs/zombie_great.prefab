@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4534568481677654035}
   - component: {fileID: 3655495042841028444}
   - component: {fileID: 7889895795242840764}
+  - component: {fileID: 1904964975058471249}
   m_Layer: 0
   m_Name: zombie_great
   m_TagString: Untagged
@@ -142,7 +143,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3655495042841028444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3084494221314248360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -186,4 +187,20 @@ MonoBehaviour:
   death: {fileID: 11400000, guid: c2408560c82085a4b8464daf827444a3, type: 2}
   speed: 1.5
   enemy: {fileID: 3084494221314248360}
-  live: 10
+  live: 20
+--- !u!70 &1904964975058471249
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3084494221314248360}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.25587833, y: 2.766408}
+  m_Size: {x: 2.6187577, y: 6.143587}
+  m_Direction: 0

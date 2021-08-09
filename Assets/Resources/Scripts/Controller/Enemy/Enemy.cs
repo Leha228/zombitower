@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
             // анимация атаки
             speed = 0; 
         } else {
-            live -= ShootController.singleton.damage;
+            live -= TowerModel.singleton.damage[UserModel.singleton.GetActiveTower()];
             if (live <= 0) {
                 DeathAnimation();
             }

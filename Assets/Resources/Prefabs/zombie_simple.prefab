@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4874358880440959897}
   - component: {fileID: 5756036279340652462}
   - component: {fileID: 4183808446674316238}
+  - component: {fileID: 7844919180929879439}
   m_Layer: 0
   m_Name: zombie_simple
   m_TagString: Untagged
@@ -142,7 +143,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5756036279340652462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6867120981821681521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -187,3 +188,19 @@ MonoBehaviour:
   speed: 1.5
   enemy: {fileID: 6867120981821681521}
   live: 10
+--- !u!70 &7844919180929879439
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6867120981821681521}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.11019622, y: 2.556051}
+  m_Size: {x: 2.2152169, y: 5.8489556}
+  m_Direction: 0

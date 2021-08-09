@@ -18,6 +18,7 @@ public class KnightModel : MonoBehaviour
         singleton = this; 
         collisions = new List<string> {
             "zombie_great(Clone)",
+            "zombie_simple(Clone)",
         };
     }
 

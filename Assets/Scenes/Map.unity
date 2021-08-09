@@ -2258,7 +2258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &238514649
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2651,7 +2651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301162412}
   m_Layer: 5
-  m_Name: item1
+  m_Name: tower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2906,9 +2906,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &328261348
 MonoBehaviour:
@@ -4039,8 +4039,9 @@ GameObject:
   - component: {fileID: 486083503}
   - component: {fileID: 486083502}
   - component: {fileID: 486083501}
+  - component: {fileID: 486083504}
   m_Layer: 5
-  m_Name: buy
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4109,7 +4110,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 486083502}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 486083504}
+        m_TargetAssemblyTypeName: BuyController, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &486083502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4148,6 +4161,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486083499}
   m_CullTransparentMesh: 1
+--- !u!114 &486083504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486083499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe34504684febb468d135fff9513aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 556972063}
+  - {fileID: 1914117241}
+  - {fileID: 486083499}
 --- !u!1 &531593088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4832,8 +4861,9 @@ GameObject:
   - component: {fileID: 556972067}
   - component: {fileID: 556972066}
   - component: {fileID: 556972065}
+  - component: {fileID: 556972068}
   m_Layer: 5
-  m_Name: buy
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4902,7 +4932,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 556972066}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 556972068}
+        m_TargetAssemblyTypeName: BuyController, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &556972066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,6 +4983,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556972063}
   m_CullTransparentMesh: 1
+--- !u!114 &556972068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556972063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe34504684febb468d135fff9513aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 556972063}
+  - {fileID: 1914117241}
+  - {fileID: 486083499}
 --- !u!1 &573994077
 GameObject:
   m_ObjectHideFlags: 0
@@ -5301,7 +5359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.116000004}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 10321.68, y: 2.17}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &626372812
@@ -7303,6 +7361,7 @@ GameObject:
   - component: {fileID: 776699970}
   - component: {fileID: 776699976}
   - component: {fileID: 776699975}
+  - component: {fileID: 776699977}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7444,8 +7503,9 @@ MonoBehaviour:
   - {fileID: 358676487}
   - {fileID: 1059385496}
   - {fileID: 61335374}
-  diamond: 150
-  gold: 0
+  diamond: 0
+  gold: 400
+  towers: 
 --- !u!114 &776699976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7456,6 +7516,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96926876c114c624591d304be3a1be26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &776699977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776699969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10339ae99eafbc4286ccce7d6b3a75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &781638971
@@ -8022,7 +8094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909961102}
   m_Layer: 5
-  m_Name: item3
+  m_Name: tower3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8060,7 +8132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918918797}
   m_Layer: 5
-  m_Name: item2
+  m_Name: tower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9654,8 +9726,8 @@ RectTransform:
   m_Father: {fileID: 2014293013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.51425946}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.0000053195, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10467,7 +10539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1214977494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10525,7 +10597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -27.61, y: -333}
+  m_AnchoredPosition: {x: -27.609985, y: -333}
   m_SizeDelta: {x: -55.21, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255282518
@@ -10665,8 +10737,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1259536945}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_Value: -0.00000005977862
-  m_Size: 0.6528348
+  m_Value: -0.00000005977861
+  m_Size: 0.6528347
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10820,7 +10892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -27.61, y: -100}
+  m_AnchoredPosition: {x: -27.609985, y: -100}
   m_SizeDelta: {x: -55.21, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276174174
@@ -11466,7 +11538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.1099854, y: -69.84999}
+  m_AnchoredPosition: {x: -4.1099854, y: -69.84996}
   m_SizeDelta: {x: -184.9, y: -250.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441916841
@@ -12069,7 +12141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: Select
 --- !u!222 &1545554816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12224,7 +12296,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1554658687}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776699970}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: Open
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Forge
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1554658687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12817,7 +12901,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 925328080}
   m_HandleRect: {fileID: 925328079}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -13635,9 +13719,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 5.5, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1710691946
 MonoBehaviour:
@@ -14524,6 +14608,10 @@ MonoBehaviour:
   - {fileID: 755135146}
   - {fileID: 808268489}
   - {fileID: 859317339}
+  towers:
+  - {fileID: 556972065}
+  - {fileID: 1914117243}
+  - {fileID: 486083501}
 --- !u!114 &1851725710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15002,8 +15090,9 @@ GameObject:
   - component: {fileID: 1914117245}
   - component: {fileID: 1914117244}
   - component: {fileID: 1914117243}
+  - component: {fileID: 1914117246}
   m_Layer: 5
-  m_Name: buy
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15072,7 +15161,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1914117244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1914117246}
+        m_TargetAssemblyTypeName: BuyController, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1914117244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15111,6 +15212,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914117241}
   m_CullTransparentMesh: 1
+--- !u!114 &1914117246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914117241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe34504684febb468d135fff9513aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 556972063}
+  - {fileID: 1914117241}
+  - {fileID: 486083499}
 --- !u!1 &1914580453
 GameObject:
   m_ObjectHideFlags: 0
@@ -15622,7 +15739,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16461,7 +16578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -27.61, y: -569}
+  m_AnchoredPosition: {x: -27.609985, y: -569}
   m_SizeDelta: {x: -55.21, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119124405
