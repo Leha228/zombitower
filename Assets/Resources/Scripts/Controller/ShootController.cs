@@ -80,12 +80,16 @@ public class ShootController : MonoBehaviour
     }
 
     private void Shoot() {
+        if (PlayerPrefs.GetInt(UserModel.ARROWS, 0) < 1) return;
+
         GameObject newArrow = Instantiate(
                 TowerModel.singleton.shells[UserModel.singleton.GetActiveTower()], 
-                transform.position, 
+                transform.position,
                 transform.rotation
         );
+        
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
+        PlayerPrefs.SetInt(UserModel.ARROWS, PlayerPrefs.GetInt(UserModel.ARROWS, 0) - 1);
     }
 
     Vector2 PointPosition(float t)

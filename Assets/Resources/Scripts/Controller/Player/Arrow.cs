@@ -40,7 +40,6 @@ public class Arrow : MonoBehaviour
         _hasHit = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
-        //arrow.GetComponentInChildren<TrailRenderer>().enabled = false;
     }
 
     private void OnCollisionExit2D(Collision2D collision) {

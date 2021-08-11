@@ -1,3 +1,4 @@
+using System.Data.Common;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,7 @@ public class SaveData : MonoBehaviour
         Data data = new Data();
         data.gold = UserModel.singleton.GetGold();
         data.diamond = UserModel.singleton.GetDiamond();
+        data.towers = UserModel.singleton.towers;
 
         string json = JsonUtility.ToJson(data);
 
@@ -35,25 +37,23 @@ public class SaveData : MonoBehaviour
     }
 
     public void LoadToFile() {
-        if (!File.Exists(_pathSave)) {
-            Debug.Log("File not found");
-            return;
-        }
-        try {
-            string json = File.ReadAllText(_pathSave);
-            SaveModel saveModelFromJson = JsonUtility.FromJson<SaveModel>(json);
-            UserModel.singleton.diamond = saveModelFromJson.diamond;
-            UserModel.singleton.gold = saveModelFromJson.gold;
-            //UserModel.singleton.towers = saveModelFromJson.towers;
-        } catch {
-            Debug.Log("Not load to file");
-        }
+        if (!File.Exists(_pathSave)) return;
+
+        string json = File.ReadAllText(_pathSave);
+        Data saveModelFromJson = JsonUtility.FromJson<Data>(json);
+        UserModel.singleton.diamond = saveModelFromJson.diamond;
+        UserModel.singleton.gold = saveModelFromJson.gold;
+        UserModel.singleton.towers = saveModelFromJson.towers;
+        Debug.Log("Data to load...");
     }
+
+    private void OnApplicationQuit() => SaveToFile();
     
     [Serializable]
     public class Data
     {
         public int gold;
         public int diamond;
+        public List<int> towers;
     }
 }

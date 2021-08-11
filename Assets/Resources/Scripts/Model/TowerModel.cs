@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Spine.Unity;
 using Spine;
 
@@ -19,6 +20,7 @@ public class TowerModel : MonoBehaviour
     [SerializeField] public GameObject[] mobs;
     [SerializeField] public int[] damage;
     [SerializeField] public SkeletonDataAsset[] dataAsset;
+    [SerializeField] public GameObject[] pointShoot;
     [SerializeField] public int live;
     private List<string> _collisions;
     private bool _coroutine = false;
@@ -34,6 +36,7 @@ public class TowerModel : MonoBehaviour
     private void Start() {
         skeletonAnimation.skeletonDataAsset = dataAsset[UserModel.singleton.GetActiveTower()];
         skeletonAnimation.Initialize(true);
+        UpdatePointShoot();
     }
 
     public void SetAnimation(AnimationReferenceAsset animation, bool loop) 
@@ -49,6 +52,17 @@ public class TowerModel : MonoBehaviour
     private void CheckDamage() {
         if (live < 1) 
             EventManager.singleton.YouDie();
+    }
+
+    private void UpdatePointShoot() {
+
+        foreach (var item in pointShoot)
+        {
+            if (item.name == shells[UserModel.singleton.GetActiveTower()].name) 
+                item.SetActive(true);
+            else
+                item.SetActive(false);
+        }
     }
 
     IEnumerator Damage(float timeSecond) {

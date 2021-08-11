@@ -84,7 +84,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1312750002565623814
 MonoBehaviour:
@@ -201,6 +201,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25587833, y: 2.766408}
-  m_Size: {x: 2.6187577, y: 6.143587}
+  m_Offset: {x: 0.27872255, y: 2.5836554}
+  m_Size: {x: 1.6593034, y: 5.7780805}
   m_Direction: 0

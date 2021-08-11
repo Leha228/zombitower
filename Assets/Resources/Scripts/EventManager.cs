@@ -10,6 +10,7 @@ public class EventManager : MonoBehaviour
     [SerializeField] public GameObject youDieContinue;
     private int _progress = 0;
     private int _numberLevel = DataHolder.numberLevel;
+    private int _gold = DataHolder.gold;
     private int _countEnemy = DataHolder.enemyList.Length;
 
     private void Awake() { singleton = this; }
@@ -54,6 +55,14 @@ public class EventManager : MonoBehaviour
     private void nextLevel() {
         if (_numberLevel == PlayerPrefs.GetInt("countLevel", 1))
             PlayerPrefs.SetInt("countLevel", PlayerPrefs.GetInt("countLevel", 1) + 1);
+        
+        UserModel.singleton.gold += _gold;
+        PlayerPrefs.SetInt(UserModel.RESOURCE_IRON, UserModel.singleton.GetResourceIron() + 3);
+        PlayerPrefs.SetInt(UserModel.RESOURCE_WOOD, UserModel.singleton.GetResourceWood() + 3);
+        PlayerPrefs.SetInt(UserModel.RESOURCE_CHARTER, UserModel.singleton.GetResourceCharter() + 3);
+        SaveData.singleton.SaveToFile();
         SceneManager.LoadScene("Map");
     }
+
+    void OnApplicationQuit() => SaveData.singleton.SaveToFile();
 }

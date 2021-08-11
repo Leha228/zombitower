@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject[] levelList;
     [SerializeField] private Sprite[] spriteList;
     [SerializeField] private GameObject[] menuList;
+    [SerializeField] private Text[] countList;
 
     private void Awake() { singleton = this; }
 
@@ -29,10 +30,13 @@ public class MenuManager : MonoBehaviour
                 levelList[currentLevel].GetComponent<Button>().interactable = false;
             }
         }
+
+        UpdateCountList();
     }
 
     public void DownloadLevel(int level) {
         DataHolder.numberLevel = level;
+        DataHolder.gold = levelList[level - 1].GetComponent<LevelModel>().gold;
         DataHolder.enemyList = levelList[level - 1].GetComponent<LevelModel>().enemyList;
         SceneManager.LoadScene("Game");
     }
@@ -47,4 +51,9 @@ public class MenuManager : MonoBehaviour
     }
 
     public void OpenMenu() => SceneManager.LoadScene("Menu");
+
+    public void UpdateCountList() {
+        foreach (var item in countList)
+            item.text = UserModel.singleton.GetArrows().ToString();
+    }
 }

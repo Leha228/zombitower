@@ -20,17 +20,19 @@ public class UserModel : MonoBehaviour
     public const string RESOURCE_CHARTER = "resource_charter";
     public const string ACTIVE = "Active";
     public const string SELECT = "Select";
+    public const string PAYMENT = "Payment";
+    public const string ARROWS = "Arrows";
 
 
     private void Awake() {
         singleton = this;
     }
 
-    public int GetDiamond() => PlayerPrefs.GetInt(DIAMOND, 0);
-    public int GetGold() => PlayerPrefs.GetInt(GOLD, 0);
+    public int GetDiamond() => diamond;
+    public int GetGold() => gold;
     public int GetActiveTower() => PlayerPrefs.GetInt(ACTIVE_TOWER, 0);
     public int GetResourceWood() => PlayerPrefs.GetInt(RESOURCE_WOOD, 0);
     public int GetResourceIron() => PlayerPrefs.GetInt(RESOURCE_IRON, 0);
     public int GetResourceCharter() => PlayerPrefs.GetInt(RESOURCE_CHARTER, 0);
-
+    public int GetArrows() => PlayerPrefs.GetInt(ARROWS, 0);
 }

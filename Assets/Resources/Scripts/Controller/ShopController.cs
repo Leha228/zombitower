@@ -14,8 +14,10 @@ public class ShopController : MonoBehaviour
             var image = item.GetComponent<Image>();
             item.GetComponent<Image>().color = SetColor(Color.green, 0.4f);
 
-            /*if (name == UserModel.singleton.GetActiveTower()) 
-                item.GetComponentInChildren<Text>().text = UserModel.ACTIVE;*/
+            if (UserModel.singleton.towers.Contains(name)) {
+                item.GetComponentInChildren<Text>().text = UserModel.PAYMENT;
+                continue;
+            }
                 
             if (price > UserModel.singleton.GetGold()) 
                 item.GetComponent<Image>().color =  SetColor(Color.red, 0.4f);

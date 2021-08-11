@@ -28,4 +28,18 @@ public class ForgeController : MonoBehaviour
                 item.SetActive(false);
         }
     }
+
+    public void PayArrow() {
+        if (UserModel.singleton.gold < 5 
+            || PlayerPrefs.GetInt(UserModel.RESOURCE_IRON, 0) < 1 
+            || PlayerPrefs.GetInt(UserModel.RESOURCE_WOOD, 0) < 1) return;
+
+        UserModel.singleton.gold -= 5;
+        PlayerPrefs.SetInt(UserModel.RESOURCE_IRON, UserModel.singleton.GetResourceIron() - 1);
+        PlayerPrefs.SetInt(UserModel.RESOURCE_WOOD, UserModel.singleton.GetResourceWood() - 1);
+        PlayerPrefs.SetInt(UserModel.ARROWS, UserModel.singleton.GetArrows() + 1);
+        SaveData.singleton.SaveToFile();
+        UserController.singleton.UpdateCashList();
+        MenuManager.singleton.UpdateCountList();
+    }
 }
