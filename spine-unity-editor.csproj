@@ -687,11 +687,11 @@
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/aleksejrabin/Documents/zombitower/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/aleksejrabin/Documents/zombitower/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Users/aleksejrabin/Documents/zombitower/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>/Users/aleksejrabin/Documents/zombitower/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>

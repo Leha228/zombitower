@@ -8,6 +8,7 @@ public class EventManager : MonoBehaviour
     [SerializeField] public GameObject menu;
     [SerializeField] public GameObject youDie;
     [SerializeField] public GameObject youDieContinue;
+    [SerializeField] public GameObject youWin;
     private int _progress = 0;
     private int _numberLevel = DataHolder.numberLevel;
     private int _gold = DataHolder.gold;
@@ -15,13 +16,14 @@ public class EventManager : MonoBehaviour
 
     private void Awake() { singleton = this; }
 
-    private void OpenGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.open[UserModel.singleton.GetActiveTower()], false); 
-    private void CloseGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.close[UserModel.singleton.GetActiveTower()], false); 
+    private void OpenGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.open[UserModel.singleton.GetActiveTower()], false);
+    private void CloseGate() => TowerModel.singleton.SetAnimation(TowerModel.singleton.close[UserModel.singleton.GetActiveTower()], false);
     public int GetProgress() => _progress;
     public void YouDieContinueOpen() => youDieContinue.SetActive(true);
     public void YouDieContinueClose() => youDieContinue.SetActive(false);
     public void YouDieExit() => SceneManager.LoadScene("Map");
     public void YouDieRestart() => SceneManager.LoadScene("Game");
+    public void YouWinExit() => SceneManager.LoadScene("Map");
 
     public void CreateMob() {
         OpenGate();
@@ -34,7 +36,7 @@ public class EventManager : MonoBehaviour
 
     public void SetProgress() {
         _progress = (int)(100 / _countEnemy) + _progress;
-        if (_progress >= 99) Invoke("nextLevel", 3f); 
+        if (_progress >= 99) Invoke("nextLevel", 3f);
     }
 
     public void OnMenu() {
@@ -52,15 +54,25 @@ public class EventManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void YouWin() {
+        youWin.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
     private void nextLevel() {
         if (_numberLevel == PlayerPrefs.GetInt("countLevel", 1))
             PlayerPrefs.SetInt("countLevel", PlayerPrefs.GetInt("countLevel", 1) + 1);
-        
+
         UserModel.singleton.gold += _gold;
         PlayerPrefs.SetInt(UserModel.RESOURCE_IRON, UserModel.singleton.GetResourceIron() + 3);
         PlayerPrefs.SetInt(UserModel.RESOURCE_WOOD, UserModel.singleton.GetResourceWood() + 3);
         PlayerPrefs.SetInt(UserModel.RESOURCE_CHARTER, UserModel.singleton.GetResourceCharter() + 3);
         SaveData.singleton.SaveToFile();
+        YouWin();
+    }
+
+    public void YouWinNext() {
+        DataHolder.isNext = true;
         SceneManager.LoadScene("Map");
     }
 

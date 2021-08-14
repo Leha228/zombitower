@@ -19,11 +19,14 @@ public class MenuManager : MonoBehaviour
         if (countLevel > levelList.Length)
             countLevel = levelList.Length;
 
+        if (DataHolder.isNext)
+            DownloadLevel(countLevel);
+
         for (int currentLevel = 0; currentLevel < countLevel; currentLevel++) {
             if (currentLevel < countLevel) {
                 levelList[currentLevel].GetComponent<Button>().interactable = true;
-                if (currentLevel == countLevel - 1) 
-                    levelList[currentLevel].GetComponent<Image>().sprite = spriteList[1];
+                if (currentLevel == countLevel - 1)
+                    CurrentLevel(currentLevel);
                 else
                     levelList[currentLevel].GetComponent<Image>().sprite = spriteList[0];
             } else {
@@ -38,14 +41,15 @@ public class MenuManager : MonoBehaviour
         DataHolder.numberLevel = level;
         DataHolder.gold = levelList[level - 1].GetComponent<LevelModel>().gold;
         DataHolder.enemyList = levelList[level - 1].GetComponent<LevelModel>().enemyList;
+        DataHolder.isNext = false;
         SceneManager.LoadScene("Game");
     }
 
     public void Open(string name) {
-        foreach (var item in menuList) {    
+        foreach (var item in menuList) {
             if (item.name == name)
                 item.SetActive(true);
-            else   
+            else
                 item.SetActive(false);
         }
     }
@@ -55,5 +59,13 @@ public class MenuManager : MonoBehaviour
     public void UpdateCountList() {
         foreach (var item in countList)
             item.text = UserModel.singleton.GetArrows().ToString();
+    }
+
+    private void CurrentLevel(int currentLevel) {
+        levelList[currentLevel].GetComponent<Image>().sprite = spriteList[1];
+        levelList[currentLevel].GetComponent<RectTransform>().sizeDelta = new Vector2(
+            160f,
+            50f
+        );
     }
 }

@@ -1,0 +1,252 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/aleksejrabin/Documents/zombitower
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49984
+Successfully changed project path to: /Users/aleksejrabin/Documents/zombitower
+/Users/aleksejrabin/Documents/zombitower
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/aleksejrabin/Documents/zombitower/Assets
+GfxDevice: creating device client; threaded=0
+2021-08-13 16:51:19.776 Unity[1137:57667] (null) preferred device: Apple M1 (high power)
+2021-08-13 16:51:19.776 Unity[1137:57667] Metal devices available: 1
+2021-08-13 16:51:19.776 Unity[1137:57667] 0: Apple M1 (high power)
+2021-08-13 16:51:19.776 Unity[1137:57667] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56137
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001643 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 42.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.384 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004233 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 42.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.348 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 205.0 MB.
+System memory in use after: 203.8 MB.
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2799.
+Total: 2.396584 ms (FindLiveObjects: 0.157458 ms CreateObjectMapping: 0.049375 ms MarkObjects: 1.323417 ms  DeleteObjects: 0.865375 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Fonts
+  artifactKey: Guid(65c5ef6936d8944bda47e4ef5cdbda55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts using Guid(65c5ef6936d8944bda47e4ef5cdbda55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe6d126d8223f3b1e044c9f45c70ef40') in 0.006384 seconds
+  Import took 0.009384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.129578 seconds.
+  path: Assets/Resources/Fonts/Eater-Regular.ttf
+  artifactKey: Guid(4ee81c009fb0246caae2b2c2aea20fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/Eater-Regular.ttf using Guid(4ee81c009fb0246caae2b2c2aea20fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8b880907b503cc3402eb5671d55bc3') in 1.087466 seconds
+  Import took 1.090669 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002597 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.248 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2332 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.0 MB.
+System memory in use after: 206.8 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2847.
+Total: 2.457458 ms (FindLiveObjects: 0.169625 ms CreateObjectMapping: 0.048917 ms MarkObjects: 1.338000 ms  DeleteObjects: 0.899916 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003623 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.198 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2332 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.2 MB.
+System memory in use after: 207.1 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2851.
+Total: 2.398292 ms (FindLiveObjects: 0.147042 ms CreateObjectMapping: 0.046041 ms MarkObjects: 1.278625 ms  DeleteObjects: 0.925709 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005535 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.268 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2332 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.4 MB.
+System memory in use after: 207.3 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2855.
+Total: 2.986291 ms (FindLiveObjects: 0.160208 ms CreateObjectMapping: 0.046958 ms MarkObjects: 1.478667 ms  DeleteObjects: 1.299583 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004104 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.281 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2332 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.6 MB.
+System memory in use after: 207.5 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2859.
+Total: 2.600417 ms (FindLiveObjects: 0.174125 ms CreateObjectMapping: 0.047542 ms MarkObjects: 1.344375 ms  DeleteObjects: 1.033667 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004510 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.343 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2332 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.8 MB.
+System memory in use after: 207.6 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2863.
+Total: 2.759250 ms (FindLiveObjects: 0.298209 ms CreateObjectMapping: 0.054416 ms MarkObjects: 1.353875 ms  DeleteObjects: 1.051750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1838.405401 seconds.
+  path: Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.20.59.ttf
+  artifactKey: Guid(69bb4f62385bf4467a8e64827d9cba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.20.59.ttf using Guid(69bb4f62385bf4467a8e64827d9cba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a43f4c8ff45c8f11a14788eca3e173') in 0.167073 seconds
+  Import took 0.170938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 152.986666 seconds.
+  path: Assets/Resources/Fonts/test_font.ttf
+  artifactKey: Guid(69bb4f62385bf4467a8e64827d9cba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/test_font.ttf using Guid(69bb4f62385bf4467a8e64827d9cba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6964eace1bd27fcfd1e2d3fce03cb9b8') in 0.015583 seconds
+  Import took 0.019466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 454.823648 seconds.
+  path: Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.29.55.ttf
+  artifactKey: Guid(741755dde13534a3b80698cef23d3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.29.55.ttf using Guid(741755dde13534a3b80698cef23d3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c3e469d409e95baca9f127ddc26914') in 0.009536 seconds
+  Import took 0.013248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004924 seconds.
+  path: Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.29.55.ttf
+  artifactKey: Guid(741755dde13534a3b80698cef23d3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.29.55.ttf using Guid(741755dde13534a3b80698cef23d3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c3e469d409e95baca9f127ddc26914') in 0.008020 seconds
+  Import took 0.011501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.936536 seconds.
+  path: Assets/Resources/Fonts/font_game.ttf
+  artifactKey: Guid(741755dde13534a3b80698cef23d3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/font_game.ttf using Guid(741755dde13534a3b80698cef23d3519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f385c72840c75fb2170955673dbcafea') in 0.010241 seconds
+  Import took 0.014393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 240.797166 seconds.
+  path: Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.35.41.ttf
+  artifactKey: Guid(5e7fdc60cbc40444683e85dafe38a045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.35.41.ttf using Guid(5e7fdc60cbc40444683e85dafe38a045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099e0d9095f84d64d91081fb8e628307') in 0.011491 seconds
+  Import took 0.014896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002173 seconds.
+  path: Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.35.41.ttf
+  artifactKey: Guid(5e7fdc60cbc40444683e85dafe38a045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Fonts/My-Font-SVG-Font-2021.8.13-15.35.41.ttf using Guid(5e7fdc60cbc40444683e85dafe38a045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099e0d9095f84d64d91081fb8e628307') in 0.009440 seconds
+  Import took 0.012478 seconds .
+

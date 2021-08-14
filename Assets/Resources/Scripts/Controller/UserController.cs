@@ -16,7 +16,7 @@ public class UserController : MonoBehaviour
 
     public void UpdateCashList() {
         foreach (var item in UserModel.singleton.cashList)
-            item.text = item.name == "gold" ? 
+            item.text = item.name == "gold" ?
                 UserModel.singleton.GetGold().ToString() : UserModel.singleton.GetDiamond().ToString();
     }
 
