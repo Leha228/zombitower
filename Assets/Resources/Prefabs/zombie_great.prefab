@@ -188,6 +188,10 @@ MonoBehaviour:
   speed: 1.5
   enemy: {fileID: 3084494221314248360}
   live: 20
+  collisions:
+  - arrow(Clone)
+  - peak(Clone)
+  - knight(Clone)
 --- !u!70 &1904964975058471249
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

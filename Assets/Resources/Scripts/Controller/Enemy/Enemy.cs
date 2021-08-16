@@ -15,24 +15,18 @@ public class Enemy : MonoBehaviour
     public float speed;
     public GameObject enemy;
     public int live;
+    public List<string> collisions;
 
     private Transform shootPointLimit;
     private GameObject _progress;
-    private List<string> _collisions;
     private bool shootBool = true;
 
     void Awake() { singleton = this; }
 
     void Start()
     {
-        _collisions = new List<string> {
-            "arrow(Clone)", 
-            "arrow 1(Clone)", 
-            "knight(Clone)"
-        };
         shootPointLimit = GameObject.Find("shootPointLimit").transform;
         _progress = GameObject.Find("ButtonProgress");
-
     }
 
     void Update()
@@ -42,7 +36,7 @@ public class Enemy : MonoBehaviour
             PlayerController.singleton.Attack();
         }
 
-        transform.position = 
+        transform.position =
             new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
     }
 
@@ -61,15 +55,15 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!_collisions.Contains(collision.collider.name)) return;
-        
-        if (collision.collider.name == _collisions[0]) {
+        if (!collisions.Contains(collision.collider.name)) return;
+
+        if (collision.collider.name == collisions[0]) {
             // замедление хотьбы
             skeletonAnimation.state.SetAnimation(0, slow, true);
             speed = speed / 2;
-        } else if (collision.collider.name == _collisions[2]) { 
+        } else if (collision.collider.name == collisions[2]) {
             // анимация атаки
-            speed = 0; 
+            speed = 0;
         } else {
             live -= TowerModel.singleton.damage[UserModel.singleton.GetActiveTower()];
             if (live <= 0) {
