@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 
 public class PlayService : MonoBehaviour
 {
+    private bool isSaving = false;
 
     private void Start() {
         Init();
@@ -14,6 +13,7 @@ public class PlayService : MonoBehaviour
     private void Init() {
         PlayGamesClientConfiguration conf = new PlayGamesClientConfiguration.Builder()
             .RequestServerAuthCode(false)
+            .EnableSavedGames()
             .Build();
 
         PlayGamesPlatform.InitializeInstance(conf);
@@ -25,9 +25,12 @@ public class PlayService : MonoBehaviour
     private void SingIn() {
         PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptOnce, (succes) => {
             if (succes == SignInStatus.Success)
-                Debug.Log("SignIn Success");
+                Debug.Log("Success signin");
             else
                 Debug.Log("Error signin");
         });
     }
+
+    
+    
 }

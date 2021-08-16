@@ -1,13 +1,12 @@
-using System.Data.Common;
 using System;
+using System.Text;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using System.IO;    
 
 public class SaveData : MonoBehaviour
 {
-    public static SaveData singleton {get; private set;}
+    public static SaveData singleton { get; private set; }
     private string _pathSave;
     private string _saveFileName = "data.json";
 
@@ -26,6 +25,7 @@ public class SaveData : MonoBehaviour
         data.gold = UserModel.singleton.GetGold();
         data.diamond = UserModel.singleton.GetDiamond();
         data.towers = UserModel.singleton.towers;
+        data.levels = PlayerPrefs.GetInt("countLevel", 1);
 
         string json = JsonUtility.ToJson(data);
 
@@ -36,6 +36,27 @@ public class SaveData : MonoBehaviour
         Debug.Log("Save");
     }
 
+    public byte[] GetDataSave() {
+        Data data = new Data();
+        data.gold = UserModel.singleton.GetGold();
+        data.diamond = UserModel.singleton.GetDiamond();
+        data.towers = UserModel.singleton.towers;
+        data.levels = PlayerPrefs.GetInt("countLevel", 1);
+
+        string json = JsonUtility.ToJson(data);
+
+        byte[] barray = Encoding.UTF8.GetBytes(json);
+        return barray;
+    }
+
+    public void GetDataLoad(string json) {
+        Data saveModelFromJson = JsonUtility.FromJson<Data>(json);
+        UserModel.singleton.diamond = saveModelFromJson.diamond;
+        UserModel.singleton.gold = saveModelFromJson.gold;
+        UserModel.singleton.towers = saveModelFromJson.towers;
+        PlayerPrefs.SetInt("countLevel", saveModelFromJson.levels);
+    }
+
     public void LoadToFile() {
         if (!File.Exists(_pathSave)) return;
 
@@ -44,10 +65,15 @@ public class SaveData : MonoBehaviour
         UserModel.singleton.diamond = saveModelFromJson.diamond;
         UserModel.singleton.gold = saveModelFromJson.gold;
         UserModel.singleton.towers = saveModelFromJson.towers;
+        PlayerPrefs.SetInt("countLevel", saveModelFromJson.levels);
         Debug.Log("Data to load...");
     }
 
-    private void OnApplicationQuit() => SaveToFile();
+    private void OnApplicationQuit() { 
+        SaveToFile();
+        try { PlayServiceSave.singleton.OpenSavedGame(true); }
+        catch { Debug.Log("Not save cloud");}
+    }
     
     [Serializable]
     public class Data
@@ -55,5 +81,6 @@ public class SaveData : MonoBehaviour
         public int gold;
         public int diamond;
         public List<int> towers;
+        public int levels;
     }
 }

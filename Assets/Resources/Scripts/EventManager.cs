@@ -76,5 +76,9 @@ public class EventManager : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
-    void OnApplicationQuit() => SaveData.singleton.SaveToFile();
+    void OnApplicationQuit() {
+        SaveData.singleton.SaveToFile();
+        try { PlayServiceSave.singleton.OpenSavedGame(true); }
+        catch { Debug.Log("Not save cloud");}
+    }
 }

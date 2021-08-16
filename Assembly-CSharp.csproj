@@ -107,6 +107,7 @@
      <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
      <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerProfile.cs" />
+     <Compile Include="Assets\GPGSIds.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Enemy\EnemyShoot.cs" />
      <Compile Include="Assets\GooglePlayGames\Platforms\NearbyConnectionClientFactory.cs" />
      <Compile Include="Assets\Resources\Scripts\Model\PersonModel.cs" />
@@ -122,7 +123,8 @@
      <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\BuyController.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\ShootController.cs" />
-     <Compile Include="Assets\GPGSIds.cs" />
+     <Compile Include="Assets\Resources\Scripts\PlayService\PlayServiceSave.cs" />
+     <Compile Include="Assets\Resources\Scripts\PlayService\DateTime.cs" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\Resources\Animat\Herous\Robin\robin_hood.atlas.txt" />
      <None Include="Assets\Resources\Animat\Tower\Tower_Rome\tower2.atlas.txt" />
