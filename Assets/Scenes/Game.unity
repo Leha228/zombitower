@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: 375857761}
   - component: {fileID: 375857762}
   m_Layer: 0
-  m_Name: bullet
+  m_Name: bulletPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4017,9 +4017,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4781fbe3c1bafa24689c76ab8f11ca69, type: 2}
   - {fileID: 11400000, guid: 13f4e7e60fbb7aa48a878989f585076b, type: 2}
   - {fileID: 11400000, guid: 94bf4f085ff89fa49b5b969031ceaab5, type: 2}
-  pointShoot:
-  - {fileID: 1558470075}
-  - {fileID: 375857760}
+  pointButtonShoot:
+  - {fileID: 911206222}
+  - {fileID: 679976675}
   live: 50
 --- !u!61 &1517236486
 BoxCollider2D:
@@ -4135,7 +4135,7 @@ GameObject:
   - component: {fileID: 1558470076}
   - component: {fileID: 1558470077}
   m_Layer: 0
-  m_Name: peak
+  m_Name: peakPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

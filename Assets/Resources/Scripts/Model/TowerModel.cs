@@ -20,7 +20,7 @@ public class TowerModel : MonoBehaviour
     [SerializeField] public GameObject[] mobs;
     [SerializeField] public int[] damage;
     [SerializeField] public SkeletonDataAsset[] dataAsset;
-    [SerializeField] public GameObject[] pointShoot;
+    [SerializeField] public GameObject[] pointButtonShoot;
     [SerializeField] public int live;
     private List<string> _collisions;
     private bool _coroutine = false;
@@ -31,12 +31,12 @@ public class TowerModel : MonoBehaviour
             "zombie_great(Clone)",
             "zombie_simple(Clone)"
         };
+        UpdatePointShoot();
     }
 
     private void Start() {
         skeletonAnimation.skeletonDataAsset = dataAsset[UserModel.singleton.GetActiveTower()];
         skeletonAnimation.Initialize(true);
-        UpdatePointShoot();
     }
 
     public void SetAnimation(AnimationReferenceAsset animation, bool loop)
@@ -55,7 +55,7 @@ public class TowerModel : MonoBehaviour
     }
 
     private void UpdatePointShoot() {
-        foreach (var item in pointShoot)
+        foreach (var item in pointButtonShoot)
         {
             if (item.name == shells[UserModel.singleton.GetActiveTower()].name)
                 item.SetActive(true);

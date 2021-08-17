@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;    
+using System.IO;
 
 public class SaveData : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class SaveData : MonoBehaviour
     private string _pathSave;
     private string _saveFileName = "data.json";
 
-    private void Awake() 
+    private void Awake()
     {
 #if UNITY_ANDROID && UNITY_EDITOR
         _pathSave = Path.Combine(Application.persistentDataPath, _saveFileName);
@@ -25,6 +25,7 @@ public class SaveData : MonoBehaviour
         data.gold = UserModel.singleton.GetGold();
         data.diamond = UserModel.singleton.GetDiamond();
         data.towers = UserModel.singleton.towers;
+        data.players = UserModel.singleton.players;
         data.levels = PlayerPrefs.GetInt("countLevel", 1);
 
         string json = JsonUtility.ToJson(data);
@@ -41,6 +42,7 @@ public class SaveData : MonoBehaviour
         data.gold = UserModel.singleton.GetGold();
         data.diamond = UserModel.singleton.GetDiamond();
         data.towers = UserModel.singleton.towers;
+        data.towers = UserModel.singleton.players;
         data.levels = PlayerPrefs.GetInt("countLevel", 1);
 
         string json = JsonUtility.ToJson(data);
@@ -54,6 +56,7 @@ public class SaveData : MonoBehaviour
         UserModel.singleton.diamond = saveModelFromJson.diamond;
         UserModel.singleton.gold = saveModelFromJson.gold;
         UserModel.singleton.towers = saveModelFromJson.towers;
+        UserModel.singleton.players = saveModelFromJson.players;
         PlayerPrefs.SetInt("countLevel", saveModelFromJson.levels);
     }
 
@@ -65,22 +68,24 @@ public class SaveData : MonoBehaviour
         UserModel.singleton.diamond = saveModelFromJson.diamond;
         UserModel.singleton.gold = saveModelFromJson.gold;
         UserModel.singleton.towers = saveModelFromJson.towers;
+        UserModel.singleton.players = saveModelFromJson.players;
         PlayerPrefs.SetInt("countLevel", saveModelFromJson.levels);
         Debug.Log("Data to load...");
     }
 
-    private void OnApplicationQuit() { 
+    private void OnApplicationQuit() {
         SaveToFile();
         try { PlayServiceSave.singleton.OpenSavedGame(true); }
         catch { Debug.Log("Not save cloud");}
     }
-    
+
     [Serializable]
     public class Data
     {
         public int gold;
         public int diamond;
         public List<int> towers;
+        public List<int> players;
         public int levels;
     }
 }
