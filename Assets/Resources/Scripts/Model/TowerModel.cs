@@ -28,7 +28,7 @@ public class TowerModel : MonoBehaviour
     private void Awake() {
         singleton = this;
         _collisions = new List<string> {
-            "zombie_great(Clone)", 
+            "zombie_great(Clone)",
             "zombie_simple(Clone)"
         };
     }
@@ -39,7 +39,7 @@ public class TowerModel : MonoBehaviour
         UpdatePointShoot();
     }
 
-    public void SetAnimation(AnimationReferenceAsset animation, bool loop) 
+    public void SetAnimation(AnimationReferenceAsset animation, bool loop)
         => skeletonAnimation.state.SetAnimation(0, animation, loop);
 
     private void OnCollisionStay2D(Collision2D other) {
@@ -50,15 +50,14 @@ public class TowerModel : MonoBehaviour
     }
 
     private void CheckDamage() {
-        if (live < 1) 
+        if (live < 1)
             EventManager.singleton.YouDie();
     }
 
     private void UpdatePointShoot() {
-
         foreach (var item in pointShoot)
         {
-            if (item.name == shells[UserModel.singleton.GetActiveTower()].name) 
+            if (item.name == shells[UserModel.singleton.GetActiveTower()].name)
                 item.SetActive(true);
             else
                 item.SetActive(false);

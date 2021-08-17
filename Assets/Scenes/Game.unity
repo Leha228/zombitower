@@ -4018,8 +4018,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 13f4e7e60fbb7aa48a878989f585076b, type: 2}
   - {fileID: 11400000, guid: 94bf4f085ff89fa49b5b969031ceaab5, type: 2}
   pointShoot:
-  - {fileID: 911206222}
-  - {fileID: 679976675}
+  - {fileID: 1558470075}
+  - {fileID: 375857760}
   live: 50
 --- !u!61 &1517236486
 BoxCollider2D:

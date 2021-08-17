@@ -6,8 +6,8 @@ public class UserController : MonoBehaviour
     private void Awake() { singleton = this; }
 
     private void Start() {
-        PlayerPrefs.DeleteAll();
-        if (!PlayerPrefs.HasKey(UserModel.ACTIVE_TOWER)) 
+        //PlayerPrefs.DeleteAll();
+        if (!PlayerPrefs.HasKey(UserModel.ACTIVE_TOWER))
             Init();
 
         SaveData.singleton.LoadToFile();
@@ -29,7 +29,7 @@ public class UserController : MonoBehaviour
 
         try { PlayServiceSave.singleton.OpenSavedGame(false); }
         catch { UserModel.singleton.towers.Add(0); }
-        
+
         SaveData.singleton.SaveToFile();
     }
 }
