@@ -7,8 +7,8 @@ public class PersonModel : MonoBehaviour
     [SerializeField] public GameObject[] tabs;
     [SerializeField] public GameObject[] towerList;
     [SerializeField] public GameObject[] towerSelectList;
-    [SerializeField] public GameObject[] playerList;
-    [SerializeField] public GameObject[] playerSelectList;
+    [SerializeField] public GameObject[] herousList;
+    [SerializeField] public GameObject[] herousSelectList;
 
     private void Awake() { singleton = this; }
 }

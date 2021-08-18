@@ -25,7 +25,7 @@ public class SaveData : MonoBehaviour
         data.gold = UserModel.singleton.GetGold();
         data.diamond = UserModel.singleton.GetDiamond();
         data.towers = UserModel.singleton.towers;
-        data.players = UserModel.singleton.players;
+        data.herous = UserModel.singleton.herous;
         data.levels = PlayerPrefs.GetInt("countLevel", 1);
 
         string json = JsonUtility.ToJson(data);
@@ -42,7 +42,7 @@ public class SaveData : MonoBehaviour
         data.gold = UserModel.singleton.GetGold();
         data.diamond = UserModel.singleton.GetDiamond();
         data.towers = UserModel.singleton.towers;
-        data.towers = UserModel.singleton.players;
+        data.herous = UserModel.singleton.herous;
         data.levels = PlayerPrefs.GetInt("countLevel", 1);
 
         string json = JsonUtility.ToJson(data);
@@ -56,7 +56,7 @@ public class SaveData : MonoBehaviour
         UserModel.singleton.diamond = saveModelFromJson.diamond;
         UserModel.singleton.gold = saveModelFromJson.gold;
         UserModel.singleton.towers = saveModelFromJson.towers;
-        UserModel.singleton.players = saveModelFromJson.players;
+        UserModel.singleton.herous = saveModelFromJson.herous;
         PlayerPrefs.SetInt("countLevel", saveModelFromJson.levels);
     }
 
@@ -68,7 +68,7 @@ public class SaveData : MonoBehaviour
         UserModel.singleton.diamond = saveModelFromJson.diamond;
         UserModel.singleton.gold = saveModelFromJson.gold;
         UserModel.singleton.towers = saveModelFromJson.towers;
-        UserModel.singleton.players = saveModelFromJson.players;
+        UserModel.singleton.herous = saveModelFromJson.herous;
         PlayerPrefs.SetInt("countLevel", saveModelFromJson.levels);
         Debug.Log("Data to load...");
     }
@@ -85,7 +85,7 @@ public class SaveData : MonoBehaviour
         public int gold;
         public int diamond;
         public List<int> towers;
-        public List<int> players;
+        public List<int> herous;
         public int levels;
     }
 }

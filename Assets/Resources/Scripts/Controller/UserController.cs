@@ -22,7 +22,7 @@ public class UserController : MonoBehaviour
 
     public void Init() {
         PlayerPrefs.SetInt(UserModel.ACTIVE_TOWER, 0);
-        PlayerPrefs.SetInt(UserModel.ACTIVE_PLAYER, 0);
+        PlayerPrefs.SetInt(UserModel.ACTIVE_HEROUS, 0);
         PlayerPrefs.SetInt(UserModel.RESOURCE_WOOD, 5);
         PlayerPrefs.SetInt(UserModel.RESOURCE_IRON, 5);
         PlayerPrefs.SetInt(UserModel.RESOURCE_CHARTER, 5);
@@ -31,7 +31,7 @@ public class UserController : MonoBehaviour
         try { PlayServiceSave.singleton.OpenSavedGame(false); }
         catch {
           UserModel.singleton.towers.Add(0);
-          UserModel.singleton.players.Add(0);
+          UserModel.singleton.herous.Add(0);
         }
 
         SaveData.singleton.SaveToFile();

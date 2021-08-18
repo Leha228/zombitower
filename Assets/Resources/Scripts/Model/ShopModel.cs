@@ -8,7 +8,7 @@ public class ShopModel : MonoBehaviour
     [SerializeField] public GameObject shop;
     [SerializeField] public GameObject[] tabs;
     [SerializeField] public Button[] towers;
-    [SerializeField] public GameObject[] herous;
+    [SerializeField] public Button[] herous;
     //[SerializeField] public GameObject[] shells;
     //[SerializeField] public GameObject[] vip;
 

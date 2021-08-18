@@ -6,7 +6,7 @@ using UnityEngine;
 public class PersonController : MonoBehaviour
 {
     private void Start() {
-        UpdatePlayerList();
+        UpdateHerousList();
         UpdateTowerList();
     }
 
@@ -20,10 +20,10 @@ public class PersonController : MonoBehaviour
         }
     }
 
-    private void UpdatePlayerList() {
-        foreach (var item in PersonModel.singleton.playerSelectList)
+    private void UpdateHerousList() {
+        foreach (var item in PersonModel.singleton.herousSelectList)
         {
-            if (item.name == PlayerPrefs.GetInt(UserModel.ACTIVE_PLAYER, 0).ToString())
+            if (item.name == PlayerPrefs.GetInt(UserModel.ACTIVE_HEROUS, 0).ToString())
                 item.SetActive(true);
             else
                 item.SetActive(false);
@@ -44,9 +44,9 @@ public class PersonController : MonoBehaviour
         UpdateTowerList();
     }
 
-    public void SelectPlayer(int player) {
-        PlayerPrefs.SetInt(UserModel.ACTIVE_PLAYER, player);
-        UpdatePlayerList();
+    public void SelectHerous(int herous) {
+        PlayerPrefs.SetInt(UserModel.ACTIVE_HEROUS, herous);
+        UpdateHerousList();
     }
 
     public void NextTower(int currentTower) {
@@ -79,30 +79,30 @@ public class PersonController : MonoBehaviour
         }
     }
 
-    public void NextPlayer(int currentPlayer) {
-        int indexPlayer = UserModel.singleton.towers.IndexOf(currentPlayer);
-        int namePlayer = CheckIndexPlayer(indexPlayer + 1);
+    public void NextHerous(int currentHerous) {
+        int indexHerous = UserModel.singleton.towers.IndexOf(currentHerous);
+        int nameHerous = CheckIndexHerous(indexHerous + 1);
 
-        if (namePlayer == -1) return;
+        if (nameHerous == -1) return;
 
-        foreach (var item in PersonModel.singleton.playerList)
+        foreach (var item in PersonModel.singleton.herousList)
         {
-            if (item.name == namePlayer.ToString())
+            if (item.name == nameHerous.ToString())
                 item.SetActive(true);
             else
                 item.SetActive(false);
         }
     }
 
-    public void PrevPlayer(int currentPlayer) {
-        int indexPlayer = UserModel.singleton.towers.IndexOf(currentPlayer);
-        int namePlayer = CheckIndexPlayer(indexPlayer - 1);
+    public void PrevHerous(int currentHerous) {
+        int indexHerous = UserModel.singleton.towers.IndexOf(currentHerous);
+        int nameHerous = CheckIndexHerous(indexHerous - 1);
 
-        if (namePlayer == -1) return;
+        if (nameHerous == -1) return;
 
-        foreach (var item in PersonModel.singleton.playerList)
+        foreach (var item in PersonModel.singleton.herousList)
         {
-            if (item.name == namePlayer.ToString())
+            if (item.name == nameHerous.ToString())
                 item.SetActive(true);
             else
                 item.SetActive(false);
@@ -114,8 +114,8 @@ public class PersonController : MonoBehaviour
         catch { return -1; }
     }
 
-    private int CheckIndexPlayer(int index) {
-        try { return Convert.ToInt32(UserModel.singleton.players[index]); }
+    private int CheckIndexHerous(int index) {
+        try { return Convert.ToInt32(UserModel.singleton.herous[index]); }
         catch { return -1; }
     }
 }
