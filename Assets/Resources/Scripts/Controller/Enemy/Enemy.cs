@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Spine.Unity;
 using Spine;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Enemy : MonoBehaviour
     public SkeletonAnimation skeletonAnimation;
     public SkeletonData skeletonData;
     public AnimationReferenceAsset slow, death;
+    public Image healthBar;
+    public GameObject hp;
 
     public float speed;
     public GameObject enemy;
@@ -20,6 +23,7 @@ public class Enemy : MonoBehaviour
     private Transform shootPointLimit;
     private GameObject _progress;
     private bool shootBool = true;
+    private float partLive;
 
     void Awake() { singleton = this; }
 
@@ -27,6 +31,10 @@ public class Enemy : MonoBehaviour
     {
         shootPointLimit = GameObject.Find("shootPointLimit").transform;
         _progress = GameObject.Find("ButtonProgress");
+        healthBar.fillAmount = 1f;
+        partLive = (live / TowerModel.singleton.damage[UserModel.singleton.GetActiveTower()]);
+        partLive = 100 / partLive;
+        partLive = partLive / 100;
     }
 
     void Update()
@@ -43,6 +51,8 @@ public class Enemy : MonoBehaviour
     public void DeathAnimation() {
         speed = 0;
         skeletonAnimation.state.SetAnimation(0, death, false);
+        hp.SetActive(false);
+
         Invoke("DestroyEnemy", 0.7f);
     }
 
@@ -66,9 +76,10 @@ public class Enemy : MonoBehaviour
             speed = 0;
         } else {
             live -= TowerModel.singleton.damage[UserModel.singleton.GetActiveTower()];
-            if (live <= 0) {
-                DeathAnimation();
-            }
+
+            healthBar.fillAmount = healthBar.fillAmount - partLive;
+
+            if (live <= 0) DeathAnimation();
         }
     }
 }

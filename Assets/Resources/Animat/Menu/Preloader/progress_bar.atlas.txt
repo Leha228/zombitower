@@ -1,0 +1,41 @@
+
+progress_bar.png
+size: 241,92
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+symbol_1
+  rotate: false
+  xy: 2, 2
+  size: 121, 34
+  orig: 135, 46
+  offset: 5, 8
+  index: -1
+symbol_2
+  rotate: false
+  xy: 104, 56
+  size: 99, 34
+  orig: 113, 46
+  offset: 5, 8
+  index: -1
+symbol_3
+  rotate: true
+  xy: 205, 7
+  size: 83, 34
+  orig: 97, 46
+  offset: 5, 8
+  index: -1
+symbol_4
+  rotate: false
+  xy: 125, 20
+  size: 76, 34
+  orig: 89, 46
+  offset: 5, 8
+  index: -1
+symbol_5
+  rotate: false
+  xy: 2, 38
+  size: 100, 52
+  orig: 111, 66
+  offset: 4, 9
+  index: -1

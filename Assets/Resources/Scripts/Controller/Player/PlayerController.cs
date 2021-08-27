@@ -1,24 +1,34 @@
 using UnityEngine;
 using Spine.Unity;
 using Spine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController singleton { get; private set;}
 
-    public SkeletonAnimation skeletonAnimation;
-    public SkeletonData skeletonData;
-    public AnimationReferenceAsset idle, attacking;
+    [SerializeField] public SkeletonAnimation skeletonAnimation;
+    [SerializeField] public SkeletonData skeletonData;
+    [SerializeField] public AnimationReferenceAsset[] idle;
+    [SerializeField] public AnimationReferenceAsset[] attacking;
+    [SerializeField] public SkeletonDataAsset[] dataAsset;
+    [SerializeField] private Image healthBar;
+    [SerializeField] public int[] live;
     private string _currentState;
     private string _prevState;
     private string _currentAnimation;
+    private float partLive;
 
     void Awake() { singleton = this; }
 
     void Start()
     {
+        skeletonAnimation.skeletonDataAsset = dataAsset[UserModel.singleton.GetActiveHerous()];
+        skeletonAnimation.Initialize(true);
+
         _currentState = "idle";
         SetCharacterState(_currentState);
+        InitHealthBar();
     }
 
     public void Attack()
@@ -28,6 +38,14 @@ public class PlayerController : MonoBehaviour
     }
 
     private void ArrowCreate() => Bow.singleton.bowEvent.Invoke();
+
+    private void InitHealthBar()
+    {
+        healthBar.fillAmount = 1f;
+        partLive = (live[UserModel.singleton.GetActiveHerous()] / TowerModel.singleton.damage[UserModel.singleton.GetActiveTower()]);
+        partLive = 100 / partLive;
+        partLive = partLive / 100;
+    }
 
     public void setAnimation(AnimationReferenceAsset animation, bool loop, float timeScale)
     {
@@ -47,9 +65,9 @@ public class PlayerController : MonoBehaviour
     public void SetCharacterState(string state)
     {
         if (state.Equals("attack"))
-            setAnimation(attacking, false, 1f);
+            setAnimation(attacking[UserModel.singleton.GetActiveHerous()], false, 1f);
         else
-            setAnimation(idle, true, 1f);
+            setAnimation(idle[UserModel.singleton.GetActiveHerous()], true, 1f);
 
         _currentState = state;
     }

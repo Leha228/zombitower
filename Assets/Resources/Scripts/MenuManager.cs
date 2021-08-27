@@ -46,6 +46,7 @@ public class MenuManager : MonoBehaviour
     }
 
     public void Open(string name) {
+        Debug.Log($"Open {name}");
         foreach (var item in menuList) {
             if (item.name == name)
                 item.SetActive(true);
@@ -58,7 +59,7 @@ public class MenuManager : MonoBehaviour
 
     public void UpdateCountList() {
         foreach (var item in countList)
-            item.text = UserModel.singleton.GetArrows().ToString();
+            item.text = UserModel.singleton.GetActiveShellsCount().ToString();
     }
 
     private void CurrentLevel(int currentLevel) {

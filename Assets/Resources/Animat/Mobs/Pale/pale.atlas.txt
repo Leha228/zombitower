@@ -1,0 +1,48 @@
+
+pale.png
+size: 482,209
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+base
+  rotate: false
+  xy: 2, 47
+  size: 344, 160
+  orig: 346, 162
+  offset: 1, 1
+  index: -1
+chain1
+  rotate: false
+  xy: 429, 104
+  size: 15, 103
+  orig: 15, 103
+  offset: 0, 0
+  index: -1
+chain2
+  rotate: false
+  xy: 429, 104
+  size: 15, 103
+  orig: 15, 103
+  offset: 0, 0
+  index: -1
+pale
+  rotate: false
+  xy: 2, 2
+  size: 478, 43
+  orig: 482, 52
+  offset: 3, 1
+  index: -1
+wheel
+  rotate: false
+  xy: 348, 47
+  size: 79, 79
+  orig: 79, 79
+  offset: 0, 0
+  index: -1
+wheel1
+  rotate: false
+  xy: 348, 128
+  size: 79, 79
+  orig: 79, 79
+  offset: 0, 0
+  index: -1

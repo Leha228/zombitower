@@ -24,8 +24,11 @@ public class UserModel : MonoBehaviour
     public const string SELECT = "Select";
     public const string PAYMENT = "Payment";
     public const string ARROWS = "Arrows";
+    public const string BOWLDERS = "Bowlders";
+    public const string BULLETS = "Bullets";
     public const string TOWER = "tower";
     public const string HEROUS = "herous";
+    public List<string> SHELLS = new List<string> { ARROWS, BOWLDERS, BULLETS };
 
 
     private void Awake() {
@@ -40,4 +43,7 @@ public class UserModel : MonoBehaviour
     public int GetResourceIron() => PlayerPrefs.GetInt(RESOURCE_IRON, 0);
     public int GetResourceCharter() => PlayerPrefs.GetInt(RESOURCE_CHARTER, 0);
     public int GetArrows() => PlayerPrefs.GetInt(ARROWS, 0);
+    public int GetBowlders() => PlayerPrefs.GetInt(BOWLDERS, 0);
+    public int GetBullets() => PlayerPrefs.GetInt(BULLETS, 0);
+    public int GetActiveShellsCount() => PlayerPrefs.GetInt(SHELLS[GetActiveTower()], 0);
 }

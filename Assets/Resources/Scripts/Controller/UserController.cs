@@ -27,8 +27,10 @@ public class UserController : MonoBehaviour
         PlayerPrefs.SetInt(UserModel.RESOURCE_IRON, 5);
         PlayerPrefs.SetInt(UserModel.RESOURCE_CHARTER, 5);
         PlayerPrefs.SetInt(UserModel.ARROWS, 50);
+        PlayerPrefs.SetInt(UserModel.BOWLDERS, 50);
+        PlayerPrefs.SetInt(UserModel.BULLETS, 50);
 
-        try { PlayServiceSave.singleton.OpenSavedGame(false); }
+        try { PlayService.singleton.OpenSavedGame(false); }
         catch {
           UserModel.singleton.towers.Add(0);
           UserModel.singleton.herous.Add(0);

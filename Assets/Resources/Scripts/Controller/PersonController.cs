@@ -41,11 +41,13 @@ public class PersonController : MonoBehaviour
 
     public void SelectTower(int tower) {
         PlayerPrefs.SetInt(UserModel.ACTIVE_TOWER, tower);
+        MainMenuManager.singleton.RenameDataAsset();
         UpdateTowerList();
     }
 
     public void SelectHerous(int herous) {
         PlayerPrefs.SetInt(UserModel.ACTIVE_HEROUS, herous);
+        MainMenuManager.singleton.RenameDataAsset();
         UpdateHerousList();
     }
 

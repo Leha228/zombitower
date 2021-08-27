@@ -75,7 +75,7 @@ public class SaveData : MonoBehaviour
 
     private void OnApplicationQuit() {
         SaveToFile();
-        try { PlayServiceSave.singleton.OpenSavedGame(true); }
+        try { PlayService.singleton.OpenSavedGame(true); }
         catch { Debug.Log("Not save cloud");}
     }
 

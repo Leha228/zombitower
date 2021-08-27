@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3e95a05e4c9774397eeeb7bdee8ccb, type: 3}
   m_Name: button
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 94bf4f085ff89fa49b5b969031ceaab5, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 12e96c1df712844daa9a00ef05de2af2, type: 2}
   animationName: button
