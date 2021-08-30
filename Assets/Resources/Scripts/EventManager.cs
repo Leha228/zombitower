@@ -11,7 +11,6 @@ public class EventManager : MonoBehaviour
     [SerializeField] public GameObject youDieContinue;
     [SerializeField] public GameObject youWin;
     [SerializeField] private GameObject herous;
-    [SerializeField] private GameObject[] noActiveObject;
     [SerializeField] private Text[] youWinRourcesText;
     private int _progress = 0;
     private int _numberLevel = DataHolder.numberLevel;
@@ -26,9 +25,9 @@ public class EventManager : MonoBehaviour
     public void YouDieContinueOpen() => youDieContinue.SetActive(true);
     public void YouDieContinueClose() => youDieContinue.SetActive(false);
     public void RecoveryHerous() => herous.SetActive(true);
-    public void YouDieExit() => SceneManager.LoadScene("Map");
+    public void YouDieExit() => ToMenu();
     public void YouDieRestart() => SceneManager.LoadScene("Game");
-    public void YouWinExit() => SceneManager.LoadScene("Map");
+    public void YouWinExit() => ToMenu();
 
     public void CreateMob() {
         OpenGate();
@@ -47,19 +46,16 @@ public class EventManager : MonoBehaviour
     public void OnMenu() {
         menu.SetActive(true);
         Time.timeScale = 0f;
-        NoActiveObject();
     }
 
     public void OnResume() {
         menu.SetActive(false);
         Time.timeScale = 1f;
-        NoActiveObject();
     }
 
     public void YouDie() {
         youDie.SetActive(true);
         Time.timeScale = 0f;
-        NoActiveObject();
     }
 
     public void YouWin() {
@@ -70,7 +66,6 @@ public class EventManager : MonoBehaviour
         youWinRourcesText[0].text = _gold.ToString();
         youWin.SetActive(true);
         Time.timeScale = 0f;
-        NoActiveObject();
     }
 
     private void nextLevel() {
@@ -90,10 +85,10 @@ public class EventManager : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
-    private void NoActiveObject()
+    private void ToMenu()
     {
-        foreach (var item in noActiveObject)
-            item.SetActive(!item.activeSelf);
+        DataHolder.isMap = true;
+        SceneManager.LoadScene("Map");
     }
 
     void OnApplicationQuit() {

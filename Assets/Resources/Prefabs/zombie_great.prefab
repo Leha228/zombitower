@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3588531692119114246
 Transform:
   m_ObjectHideFlags: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   - arrow(Clone)
   - peak(Clone)
   - knight(Clone)
+  - model
 --- !u!70 &1904964975058471249
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

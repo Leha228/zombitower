@@ -22,6 +22,9 @@ public class MenuManager : MonoBehaviour
         if (DataHolder.isNext)
             DownloadLevel(countLevel);
 
+        if (DataHolder.isMap)
+            Open("Map");
+
         for (int currentLevel = 0; currentLevel < countLevel; currentLevel++) {
             if (currentLevel < countLevel) {
                 levelList[currentLevel].GetComponent<Button>().interactable = true;
@@ -46,7 +49,7 @@ public class MenuManager : MonoBehaviour
     }
 
     public void Open(string name) {
-        Debug.Log($"Open {name}");
+        DataHolder.isMap = false;
         foreach (var item in menuList) {
             if (item.name == name)
                 item.SetActive(true);

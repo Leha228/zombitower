@@ -202,7 +202,8 @@ namespace Spine.Unity {
 		protected override void Awake () {
 
 			base.Awake ();
-			updateMode = updateWhenInvisible;
+			this.onCullStateChanged.AddListener(OnCullStateChanged);
+
 			SyncRawImagesWithCanvasRenderers();
 			if (!this.IsValid) {
 #if UNITY_EDITOR
@@ -313,6 +314,13 @@ namespace Spine.Unity {
 			UpdateMesh();
 		}
 
+		protected void OnCullStateChanged (bool culled) {
+			if (culled)
+				OnBecameInvisible();
+			else
+				OnBecameVisible();
+		}
+
 		public void OnBecameVisible () {
 			updateMode = UpdateMode.FullUpdate;
 		}
@@ -369,7 +377,12 @@ namespace Spine.Unity {
 		public event SkeletonRendererDelegate OnMeshAndMaterialsUpdated;
 
 		protected Spine.AnimationState state;
-		public Spine.AnimationState AnimationState { get { return state; } }
+		public Spine.AnimationState AnimationState {
+			get {
+				Initialize(false);
+				return state;
+			}
+		}
 
 		[SerializeField] protected Spine.Unity.MeshGenerator meshGenerator = new MeshGenerator();
 		public Spine.Unity.MeshGenerator MeshGenerator { get { return this.meshGenerator; } }
@@ -658,10 +671,9 @@ namespace Spine.Unity {
 
 				var submeshMaterial = submeshInstructionItem.material;
 				var canvasRenderer = canvasRenderers[i];
-				if (i >= usedRenderersCount) {
+				if (i >= usedRenderersCount)
 					canvasRenderer.gameObject.SetActive(true);
-					rawImages[i].Rebuild(CanvasUpdate.PreRender);
-				}
+
 				canvasRenderer.SetMesh(targetMesh);
 				canvasRenderer.materialCount = 1;
 

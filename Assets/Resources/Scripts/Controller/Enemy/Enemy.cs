@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
         Invoke("DestroyEnemy", 0.7f);
     }
 
-    private void DestroyEnemy() {
+    public void DestroyEnemy() {
         EventManager.singleton.SetProgress();
         _progress.GetComponentInChildren<Text>().text = EventManager.singleton.GetProgress().ToString() + "%";
         enemy.SetActive(false);
@@ -74,6 +74,8 @@ public class Enemy : MonoBehaviour
         } else if (collision.collider.name == collisions[2]) {
             // анимация атаки
             speed = 0;
+        } else if (collision.collider.name == collisions[3]) {
+            DeathAnimation();
         } else {
             live -= TowerModel.singleton.damage[UserModel.singleton.GetActiveTower()];
 

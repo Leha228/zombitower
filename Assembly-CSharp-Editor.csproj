@@ -815,17 +815,9 @@
       <Project>{2FB9D5F6-E541-5768-05C6-8B04DC3CE247}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="spine-unity-examples-editor.csproj">
-      <Project>{038F7087-76AF-C944-82D5-66B2BD68C2C5}</Project>
-      <Name>spine-unity-examples-editor</Name>
-    </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{091A2A9A-AED6-7E4C-0705-601E2192F3B3}</Project>
       <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples.csproj">
-      <Project>{FE8073F5-36D8-89D4-C5BC-64361BAD6783}</Project>
-      <Name>spine-unity-examples</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{8D27D0DD-4E17-F652-5698-D050533B467C}</Project>

@@ -151,6 +151,7 @@
     <None Include="Assets/Spine/version.txt" />
     <None Include="Assets/Resources/Animat/Herous/Robin/robin_hood.atlas.txt" />
     <None Include="Assets/Resources/Animat/Tower/Tower_Barbarian/barbarian_tower.atlas.txt" />
+    <None Include="Assets/Resources/Animat/Tower/Tower_Barbarian/Bullet/bullet_barbarian_tower_.atlas.txt" />
     <None Include="Assets/GooglePlayGames/Plugins/Android/GooglePlayGamesManifest.plugin/AndroidManifest.xml" />
     <None Include="Assets/Resources/Animat/Herous/Monk/monk1.atlas.txt" />
     <None Include="Assets/Resources/Animat/Zombie/Zombie_Armored/armored_zombie.atlas.txt" />
@@ -842,17 +843,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="spine-unity-examples-editor.csproj">
-      <Project>{038F7087-76AF-C944-82D5-66B2BD68C2C5}</Project>
-      <Name>spine-unity-examples-editor</Name>
-    </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{091A2A9A-AED6-7E4C-0705-601E2192F3B3}</Project>
       <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-examples.csproj">
-      <Project>{FE8073F5-36D8-89D4-C5BC-64361BAD6783}</Project>
-      <Name>spine-unity-examples</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{8D27D0DD-4E17-F652-5698-D050533B467C}</Project>

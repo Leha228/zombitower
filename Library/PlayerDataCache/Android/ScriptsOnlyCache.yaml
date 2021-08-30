@@ -2,32 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Arrow
-    - Bow
-    - BuyController
     - Enemy
-    - EventManager
-    - ForgeController
-    - ForgeModel
     - KnightController
     - KnightModel
-    - LevelModel
-    - MainMenuManager
-    - MenuManager
-    - MobModel
-    - PersonController
-    - PersonModel
-    - PlayService
-    - PlayServiceSave
-    - PlayerController
-    - Purchase
-    - RespawnEnemy
-    - SaveData
-    - ShootController
-    - ShopController
-    - ShopModel
-    - TowerModel
-    - UserController
-    - UserModel
+    - Samples.Purchasing.Core.BuyingConsumables.BuyingConsumables
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -49,20 +27,14 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Purchasing.Codeless.dll:
-    - UnityEngine.Purchasing.IAPButton
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Mask
-    - UnityEngine.UI.ScrollRect
-    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
     spine-unity-editor.dll:
     - Spine.Unity.Editor.SpinePreferences
@@ -71,10 +43,9 @@ ScriptsOnlyBuild:
     - Spine.Unity.SkeletonAnimation
     - Spine.Unity.SkeletonDataAsset
     - Spine.Unity.SkeletonUtility
-    - Spine.Unity.SkeletonUtilityBone
     - Spine.Unity.SpineAtlasAsset
   sceneClasses:
-    Assets/Scenes/Game.unity:
+    Assets/Samples/In App Purchasing/4.0.3/01 Buying Consumables/BuyingConsumables.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -88,115 +59,6 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 68
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 96
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1664}
-    - Class: 114
-      Script: {instanceID: 1954}
-    - Class: 114
-      Script: {instanceID: 2192}
-    - Class: 114
-      Script: {instanceID: 2278}
-    - Class: 114
-      Script: {instanceID: 2510}
-    - Class: 114
-      Script: {instanceID: 2542}
-    - Class: 114
-      Script: {instanceID: 2608}
-    - Class: 114
-      Script: {instanceID: 2708}
-    - Class: 114
-      Script: {instanceID: 2872}
-    - Class: 114
-      Script: {instanceID: 2878}
-    - Class: 114
-      Script: {instanceID: 2946}
-    - Class: 114
-      Script: {instanceID: 2968}
-    - Class: 114
-      Script: {instanceID: 3498}
-    - Class: 114
-      Script: {instanceID: 3976}
-    - Class: 114
-      Script: {instanceID: 4390}
-    - Class: 114
-      Script: {instanceID: 4938}
-    - Class: 114
-      Script: {instanceID: 5198}
-    - Class: 114
-      Script: {instanceID: 5658}
-    - Class: 114
-      Script: {instanceID: 5858}
-    - Class: 114
-      Script: {instanceID: 6110}
-    - Class: 114
-      Script: {instanceID: 6186}
-    - Class: 114
-      Script: {instanceID: 6302}
-    - Class: 114
-      Script: {instanceID: 6352}
-    - Class: 114
-      Script: {instanceID: 6846}
-    - Class: 114
-      Script: {instanceID: 7326}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 210
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 251
-      Script: {instanceID: 0}
-    Assets/Scenes/Map.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -212,84 +74,48 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1664}
+      Script: {instanceID: 1670}
     - Class: 114
-      Script: {instanceID: 1742}
+      Script: {instanceID: 1962}
     - Class: 114
-      Script: {instanceID: 1820}
+      Script: {instanceID: 2200}
     - Class: 114
-      Script: {instanceID: 1892}
+      Script: {instanceID: 2548}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2192}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 2460}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2952}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 2708}
+      Script: {instanceID: 4404}
     - Class: 114
-      Script: {instanceID: 2806}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 2878}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 5218}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 5682}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 5882}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 6134}
     - Class: 114
-      Script: {instanceID: 4096}
+      Script: {instanceID: 6210}
     - Class: 114
-      Script: {instanceID: 4124}
-    - Class: 114
-      Script: {instanceID: 4390}
-    - Class: 114
-      Script: {instanceID: 4410}
-    - Class: 114
-      Script: {instanceID: 4588}
-    - Class: 114
-      Script: {instanceID: 4886}
-    - Class: 114
-      Script: {instanceID: 4938}
-    - Class: 114
-      Script: {instanceID: 5002}
-    - Class: 114
-      Script: {instanceID: 5198}
-    - Class: 114
-      Script: {instanceID: 5258}
-    - Class: 114
-      Script: {instanceID: 5658}
-    - Class: 114
-      Script: {instanceID: 5666}
-    - Class: 114
-      Script: {instanceID: 5832}
-    - Class: 114
-      Script: {instanceID: 5858}
-    - Class: 114
-      Script: {instanceID: 6032}
-    - Class: 114
-      Script: {instanceID: 6110}
-    - Class: 114
-      Script: {instanceID: 6186}
-    - Class: 114
-      Script: {instanceID: 6440}
-    - Class: 114
-      Script: {instanceID: 6596}
-    - Class: 114
-      Script: {instanceID: 6836}
-    - Class: 114
-      Script: {instanceID: 6914}
+      Script: {instanceID: 7110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -311,6 +137,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 251
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -657,7 +485,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 0b4eaf2c6e371bafd65c2dc03e50ab52
+      Hash: e2236e9f80ecc6db11813a224c2f4be8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EventManager
@@ -1605,6 +1433,12 @@ ScriptsOnlyBuild:
     className: AsyncWebUtil
   - hash:
       serializedVersion: 2
+      Hash: 5f735837e49fadc8d2739a7f12f07776
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Samples.Purchasing.Core.BuyingConsumables
+    className: BuyingConsumables
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: spine-unity-examples.dll
     namespaceName: Spine.Unity.Examples
@@ -1653,6 +1487,5 @@ ScriptsOnlyBuild:
     className: ShootController
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Map.unity
-  - Assets/Scenes/Game.unity
-  playerPath: /Users/aleksejrabin/Documents/zombi.apk
+  - Assets/Samples/In App Purchasing/4.0.3/01 Buying Consumables/BuyingConsumables.unity
+  playerPath: "/Users/aleksejrabin/Documents/\u043F\u0444\u044C\u0443.apk"

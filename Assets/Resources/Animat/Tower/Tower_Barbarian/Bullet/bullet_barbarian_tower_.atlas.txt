@@ -1,0 +1,69 @@
+
+bullet_barbarian_tower_.png
+size: 300,492
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/boulder
+  rotate: false
+  xy: 2, 12
+  size: 62, 62
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+images/explow/10003
+  rotate: false
+  xy: 133, 2
+  size: 143, 95
+  orig: 173, 163
+  offset: 11, 10
+  index: -1
+images/explow/10004
+  rotate: false
+  xy: 133, 99
+  size: 151, 118
+  orig: 173, 163
+  offset: 5, 10
+  index: -1
+images/explow/10005
+  rotate: false
+  xy: 2, 356
+  size: 166, 134
+  orig: 173, 163
+  offset: 3, 6
+  index: -1
+images/explow/10006
+  rotate: true
+  xy: 2, 186
+  size: 168, 129
+  orig: 173, 163
+  offset: 0, 20
+  index: -1
+images/explow/10007
+  rotate: true
+  xy: 170, 338
+  size: 152, 125
+  orig: 173, 163
+  offset: 6, 34
+  index: -1
+images/explow/10008
+  rotate: false
+  xy: 133, 219
+  size: 161, 117
+  orig: 173, 163
+  offset: 8, 42
+  index: -1
+images/explow/10009
+  rotate: false
+  xy: 2, 76
+  size: 129, 108
+  orig: 173, 163
+  offset: 23, 55
+  index: -1
+images/explow/10010
+  rotate: false
+  xy: 297, 489
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
